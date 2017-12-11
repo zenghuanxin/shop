@@ -118,8 +118,6 @@
         </tr>
     </table>
 </div>
-<div id="footer">
-    曾焕新
-</div>
+
 </body>
 </html>

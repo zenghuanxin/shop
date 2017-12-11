@@ -102,3 +102,10 @@
 [07-Dec-2017 09:43:11 PRC] PHP Fatal error:  Call to a member function display() on a non-object in D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Controller.class.php on line 56
 [07-Dec-2017 09:43:11 PRC] PHP Fatal error:  Call to a member function display() on a non-object in D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Controller.class.php on line 56
 [07-Dec-2017 09:43:11 PRC] PHP Fatal error:  Call to a member function display() on a non-object in D:\phpStudy\WWW\shop\ThinkPHP\Library\Think\Controller.class.php on line 56
+[11-Dec-2017 11:51:43 PRC] PHP Parse error:  syntax error, unexpected '$', expecting '&' or variable (T_VARIABLE) in D:\phpStudy\WWW\shop\Application\Common\Common\function.php on line 24
+[11-Dec-2017 11:51:46 PRC] PHP Parse error:  syntax error, unexpected '$', expecting '&' or variable (T_VARIABLE) in D:\phpStudy\WWW\shop\Application\Common\Common\function.php on line 24
+[11-Dec-2017 11:51:47 PRC] PHP Parse error:  syntax error, unexpected '$', expecting '&' or variable (T_VARIABLE) in D:\phpStudy\WWW\shop\Application\Common\Common\function.php on line 24
+[11-Dec-2017 11:51:48 PRC] PHP Parse error:  syntax error, unexpected '$', expecting '&' or variable (T_VARIABLE) in D:\phpStudy\WWW\shop\Application\Common\Common\function.php on line 24
+[11-Dec-2017 11:51:48 PRC] PHP Parse error:  syntax error, unexpected '$', expecting '&' or variable (T_VARIABLE) in D:\phpStudy\WWW\shop\Application\Common\Common\function.php on line 24
+[11-Dec-2017 11:51:49 PRC] PHP Parse error:  syntax error, unexpected '$', expecting '&' or variable (T_VARIABLE) in D:\phpStudy\WWW\shop\Application\Common\Common\function.php on line 24
+[11-Dec-2017 11:51:59 PRC] PHP Parse error:  syntax error, unexpected '$', expecting '&' or variable (T_VARIABLE) in D:\phpStudy\WWW\shop\Application\Common\Common\function.php on line 24

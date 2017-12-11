@@ -20,3 +20,9 @@ function removeXSS($val){
     }
     return $obj->purify($val);
 }
+
+function setPageBtn($pagetitle,$pagebtn,$pageurl){
+    $this->assign('pagetitle',$pagetitle);
+    $this->assign('pagebtn',$pagebtn);
+    $this->assign('pageurl',$pageurl);
+}

@@ -36,6 +36,7 @@ class GoodsController extends IndexController{
             $this->error($error);//第三个参数为true时，表示不跳转。返回json数据给客户端
         }
         //1.显示表单
+        $this->setPageBtn('添加商品','商品列表',U('goodsList'));
         $this->display();
     }
 
@@ -47,7 +48,7 @@ class GoodsController extends IndexController{
         $this->assign(
             array('data'=>$data['data'],'page'=>$data['page'])
         );
-
+        $this->setPageBtn('商品列表','添加商品',U('goodsAdd'));
         $this->display();
 
     }
@@ -81,6 +82,7 @@ class GoodsController extends IndexController{
         //先从数据库中取出要修改的记录信息
         $model = M('Goods');
         $info = $model->find($id);
+
         $this->assign('info',$info);
         //显示修改的表单
         $this->display();
@@ -117,8 +119,10 @@ class GoodsController extends IndexController{
         flock($fp,LOCK_UN);
         fclose($fp);
     }
-    public function password(){
-        echo md5('root'.C('MD5_KEY'));
+    public function setPageBtn($pagetitle,$pagebtn,$pageurl){
+        $this->assign('pagetitle',$pagetitle);
+        $this->assign('pagebtn',$pagebtn);
+        $this->assign('pageurl',$pageurl);
     }
 
 
