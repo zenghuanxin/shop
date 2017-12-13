@@ -17,8 +17,9 @@ class AdminModel extends Model
 	protected $_validate = array(
 		array('username', 'require', '账号不能为空！', 1, 'regex', 3),
 		array('username', '1,30', '账号的值最长不能超过 30 个字符！', 1, 'length', 3),
+		array('username', '', '账号必须唯一', 1, 'unique', 3),
 		array('password', 'require', '密码不能为空！', 1, 'regex', 3),
-		array('password', '1,32', '密码的值最长不能超过 32 个字符！', 1, 'length', 3),
+		array('cpassword', 'password', '两次输入密码不一致！', 1, 'confirm', 3),
 		array('is_use', 'number', '是否启用  1：启用 0：禁用必须是一个整数！', 2, 'regex', 3),
 	);
 	public function search($pageSize = 20)

@@ -21,8 +21,8 @@ class RoleController extends IndexController
     	}
         $priModel = D('privilege');
     	$priData = $priModel->getTree();
-
     	$this->assign('priData',$priData);
+
 		$this->setPageBtn('添加角色', '角色列表', U('lst?p='.I('get.p')));
 		$this->display();
     }
@@ -45,6 +45,14 @@ class RoleController extends IndexController
     	$model = M('Role');
     	$data = $model->find($id);
     	$this->assign('data', $data);
+
+        $priModel = D('privilege');
+        $priData = $priModel->getTree();
+        $this->assign('priData',$priData);
+
+        $rpModel = M('RolePrivilege');
+        $rpData = $rpModel->field('GROUP_CONCAT(pri_id) pri_id')->where(array('role_id'=>array('eq',$id)))->find();
+        $this->assign('pri_id',$rpData['pri_id']);
 
 		$this->setPageBtn('修改角色', '角色列表', U('lst?p='.I('get.p')));
 		$this->display();

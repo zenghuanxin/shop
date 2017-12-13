@@ -19,7 +19,7 @@ class AdminController extends IndexController
     		$this->error($model->getError());
     	}
 
-		$this->setPageBtn('添加', '列表', U('lst?p='.I('get.p')));
+		$this->setPageBtn('添加管理员', '管理员列表', U('lst?p='.I('get.p')));
 		$this->display();
     }
     public function edit()
@@ -42,7 +42,7 @@ class AdminController extends IndexController
     	$data = $model->find($id);
     	$this->assign('data', $data);
 
-		$this->setPageBtn('修改', '列表', U('lst?p='.I('get.p')));
+		$this->setPageBtn('修改管理员', '管理员列表', U('lst?p='.I('get.p')));
 		$this->display();
     }
     public function delete()
@@ -67,7 +67,7 @@ class AdminController extends IndexController
     		'page' => $data['page'],
     	));
 
-		$this->setPageBtn('列表', '添加', U('add'));
+		$this->setPageBtn('管理员列表', '添加管理员', U('add'));
     	$this->display();
     }
     public function setPageBtn($pagetitle,$pagebtn,$pageurl){
