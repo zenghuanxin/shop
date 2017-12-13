@@ -30,6 +30,7 @@
 <div class="main-div">
     <form name="main_form" method="POST" action="/index.php/Admin/Role/add.html" enctype="multipart/form-data">
         <table cellspacing="1" cellpadding="3" width="100%">
+
             <tr>
                 <td class="label">角色名称：</td>
                 <td>
@@ -40,7 +41,7 @@
                 <td class="label">权限列表：</td>
                 <td>
                 <?php if(is_array($priData)): $i = 0; $__LIST__ = $priData;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; echo str_repeat('-',$vo['level']*8);?>
-                        <input  class="checkbox" type="checkbox" name="pri_id[]" value="<?php echo ($vo["id"]); ?>" /><?php echo ($vo["pri_name"]); ?><br><?php endforeach; endif; else: echo "" ;endif; ?>
+                        <input level=<?php echo ($vo['level']); ?> type="checkbox" name="pri_id[]" value="<?php echo ($vo["id"]); ?>" /><?php echo ($vo["pri_name"]); ?><br><?php endforeach; endif; else: echo "" ;endif; ?>
                 </td>
 
             </tr>
@@ -73,45 +74,36 @@
     // 为所有的选择框绑定点击事件
     $(":checkbox").click(function(){
         // 先取出当前权限的level值是多少
-        var cur_level = $(this).attr("level");
-        // 判断是选中还是取消
-        if($(this).attr("checked"))
-        {
-            var tmplevel = cur_level; // 给一个临时的变量后面要进行减操作
-            // 先取出这个复选框所有前面的复选框
-            var allprev = $(this).prevAll(":checkbox");
-            // 循环每一个前面的复选框判断是不是上级的
-            $(allprev).each(function(k,v){
-                // 判断是不是上级的权限
-                if($(v).attr("level") < tmplevel)
-                {
-                    tmplevel--; // 再向上提一级
+        var cur_level = $(this).attr('level');
+        //判断是否选中
+        if ($(this).attr('checked')){
+            //
+            var temlevel = cur_level;//给一个临时的变量后面要进行减操作
+            var allprev = $(this).prevAll(':checkbox');
+            $(allprev).each(function (k,v) {
+                if ($(v).attr('level') < temlevel) {
+                    temlevel--;
                     $(v).attr("checked", "checked");
                 }
+
             });
-            // 所有子权限也选中
-            // 先取出这个复选框所有前面的复选框
-            var allprev = $(this).nextAll(":checkbox");
-            // 循环每一个前面的复选框判断是不是上级的
-            $(allprev).each(function(k,v){
-                // 判断是不是上级的权限
-                if($(v).attr("level") > cur_level)
-                    $(v).attr("checked", "checked");
-                else
-                    return false;   // 遇到一个平级的权限就停止循环后面的不用再判断了
+
+            var allnext = $(this).nextAll(':checkbox');
+            $(allnext).each(function (k,v) {
+               if ($(v).attr('level') > cur_level)
+                   $(v).attr('checked','checked');
+               else
+                   return false;
             });
-        }
-        else
-        {
-            // 先取出这个复选框所有前面的复选框
-            var allprev = $(this).nextAll(":checkbox");
-            // 循环每一个前面的复选框判断是不是上级的
-            $(allprev).each(function(k,v){
-                // 判断是不是上级的权限
-                if($(v).attr("level") > cur_level)
-                    $(v).removeAttr("checked");
-                else
-                    return false;   // 遇到一个平级的权限就停止循环后面的不用再判断了
+        }else {
+
+            var allnext = $(this).nextAll(':checkbox');
+            $(allnext).each(function (k,v) {
+                if ($(v).attr('level') > cur_level){
+                    $(v).removeAttr('checked');
+                }else {
+                    return false;
+                }
             });
         }
     });
