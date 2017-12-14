@@ -8,13 +8,13 @@ class IndexController extends Controller {
     {
         //验证登录
         if (!session('id')){
-            redirect(U('Admin/Login/login'));
+            redirect(U('Login/admin/login'));
         }
         //先调用父类的构造函数
-        parent::__construct();//语法要求  没有实际意义
+        parent::__construct();
     }
-    public function index(){
 
+    public function index(){
         $this->display();
     }
     public function menu(){
