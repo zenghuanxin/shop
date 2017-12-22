@@ -2,9 +2,9 @@
 // 本类由系统自动生成，仅供测试用途
 namespace Admin\Controller;
 use Think\Controller;
-class GoodsController extends IndexController {
+class GoodsController extends IndexController{
 
-    public function add(){
+    public function goodsAdd(){
         //2.处理表单
         if (IS_POST){
             //3.先生成模型
@@ -23,7 +23,8 @@ class GoodsController extends IndexController {
                 //5.插入数据库
                 if ($model->add()){
                     //6.提示信息
-                    $this->success('操作成功！',U('lst'));
+                    echo 'success';
+                    $this->success('操作成功！',U('goodsList'));//第三个参数为true时，表示不跳转。返回json数据给客户端
                     //7.停止执行后面代码
                     exit();
                 }
@@ -32,13 +33,14 @@ class GoodsController extends IndexController {
             //8.如果上面失败，获取失败的原因
             $error = $model->getError();
             //9.显示错误信息，并跳转回上一个页面
-            $this->error($error);
+            $this->error($error);//第三个参数为true时，表示不跳转。返回json数据给客户端
         }
         //1.显示表单
+        $this->setPageBtn('添加商品','商品列表',U('goodsList'));
         $this->display();
     }
 
-    public function lst(){
+    public function goodsList(){
 
         $model = D('Goods');
         //获取带翻页的数据
@@ -46,7 +48,7 @@ class GoodsController extends IndexController {
         $this->assign(
             array('data'=>$data['data'],'page'=>$data['page'])
         );
-
+        $this->setPageBtn('商品列表','添加商品',U('goodsAdd'));
         $this->display();
 
     }
@@ -55,7 +57,7 @@ class GoodsController extends IndexController {
 
         $model = D('Goods');
         $model->delete(I('get.id'));
-        $this->success('操作成功！',U('lst?p='.I('get.p')));
+        $this->success('操作成功！',U('goodsList?p='.I('get.p')));
     }
 
     public function edit(){
@@ -67,7 +69,7 @@ class GoodsController extends IndexController {
 
                 //save方法的返回值是影响的记录数（mysql_affected_rows）,如果修改时没有修改任何值会返回0，如果修改失败返回false
                 if (false!==$model->save()){
-                    $this->success('操作成功!',U('lst?p='.I('get.p')));
+                    $this->success('操作成功!',U('goodsList?p='.I('get.p')));
                     exit();
                 }
             }
@@ -80,6 +82,7 @@ class GoodsController extends IndexController {
         //先从数据库中取出要修改的记录信息
         $model = M('Goods');
         $info = $model->find($id);
+
         $this->assign('info',$info);
         //显示修改的表单
         $this->display();
@@ -115,6 +118,11 @@ class GoodsController extends IndexController {
         //释放锁
         flock($fp,LOCK_UN);
         fclose($fp);
+    }
+    public function setPageBtn($pagetitle,$pagebtn,$pageurl){
+        $this->assign('pagetitle',$pagetitle);
+        $this->assign('pagebtn',$pagebtn);
+        $this->assign('pageurl',$pageurl);
     }
 
 

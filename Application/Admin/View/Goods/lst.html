@@ -1,12 +1,11 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="/Public/datepicker/jquery-ui-1.9.2.custom.min.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" language="JavaScript" src="/Public/datepicker/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" charset="utf-8" language="JavaScript" src="/Public/datepicker/jquery-ui-1.9.2.custom.min.js"></script>
-    <script type="text/javascript" charset="utf-8" language="JavaScript" src="/Public/datepicker/datepicker_zh-cn.js"></script>
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <link href="__PUBLIC__/datepicker/jquery-ui-1.9.2.custom.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" language="JavaScript" src="__PUBLIC__/datepicker/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" charset="utf-8" language="JavaScript" src="__PUBLIC__/datepicker/jquery-ui-1.9.2.custom.min.js"></script>
+    <script type="text/javascript" charset="utf-8" language="JavaScript" src="__PUBLIC__/datepicker/datepicker_zh-cn.js"></script>
     <style>
         .current{padding: 5px;margin: 3px;background: #F00;color:#FFF;font-weight: bold; }
         .num{padding: 5px;border: 1px solid #F00;margin: 3px;}
@@ -14,7 +13,7 @@
     <title>Title</title>
 </head>
 <body>
-<form action="" method="" class="goods_form">
+<form action="" method="">
     <input type="hidden" name="p" value="1">
     商品名称:<input type="text" name="goods_name" value="<?php echo I('get.goods_name');?>"><br>
     价    格:<input type="text" name="start_price" value="<?php echo I('get.start_price');?>">--<input type="text" name="end_price" value="<?php echo I('get.end_price');?>"><br>
@@ -47,21 +46,25 @@
         <th>是否删除</th>
         <th>操作</th>
     </tr>
-    <?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-            <td><?php echo ($vo["id"]); ?></td>
-            <td><?php echo ($vo["goods_name"]); ?></td>
-            <td><img src="/Public/Uploads/<?php echo ($vo["sm_logo"]); ?>" /></td>
-            <td><?php echo ($vo["price"]); ?></td>
-            <td><?php echo ($vo["goods_desc"]); ?></td>
-            <td><?php echo (date("y-m-d h:i:s",$vo["addtime"])); ?></td>
-            <td><?php if($vo["is_on_sale"] == 1): ?>上架
-                <?php else: ?> 下架<?php endif; ?>
+    <volist name="data" id = 'vo'>
+        <tr>
+            <td>{$vo.id}</td>
+            <td>{$vo.goods_name}</td>
+            <td><img src="/Public/Uploads/{$vo.sm_logo}" /></td>
+            <td>{$vo.price}</td>
+            <td>{$vo.goods_desc}</td>
+            <td>{$vo.addtime|date="y-m-d h:i:s",###}</td>
+            <td><if condition="$vo.is_on_sale eq 1">上架
+                <else /> 下架
+                </if>
             </td>
-            <td><?php if($vo["is_delete"] == 0): ?>未删除
-                <?php else: ?> 已删除<?php endif; ?>
+            <td><if condition="$vo.is_delete eq 0">未删除
+                <else /> 已删除
+            </if>
             </td>
-            <td><a href="<?php echo U('edit',array('id'=>$vo['id'],'p'=>I('get.p',1)));?>">修改</a> <a  onclick="return confirm('确定要删除吗？');" href="<?php echo U('delete',array('id'=>$vo['id'],'p'=>I('get.p',1)));?>">删除</a></td>
-        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+            <td><a href="{:U('edit',array('id'=>$vo['id'],'p'=>I('get.p',1)))}">修改</a> <a  onclick="return confirm('确定要删除吗？');" href="{:U('delete',array('id'=>$vo['id'],'p'=>I('get.p',1)))}">删除</a></td>
+        </tr>
+    </volist>
     <tr><td colspan="9">
         <div>
             <span class="current">1</span>
@@ -76,10 +79,6 @@
 </html>
 <script>
 
-    $("#start_addtime").datepicker({dateFormat:'yy-mm-dd'});
-    $("#end_addtime").datepicker({dateFormat:'yy-mm-dd'});
-
-    $(".goods_form").submit(function () {
-        return false;
-    });
+    $("#start_addtime").datepicker({dateFormat:'yy-mm-dd'})
+    $("#end_addtime").datepicker({dateFormat:'yy-mm-dd'})
 </script>

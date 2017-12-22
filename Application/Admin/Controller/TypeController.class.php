@@ -1,14 +1,13 @@
 <?php
 namespace Admin\Controller;
 use \Admin\Controller\IndexController;
-class RoleController extends IndexController 
+class TypeController extends IndexController 
 {
     public function add()
     {
     	if(IS_POST)
     	{
-    		$model = D('Admin/Role');
-
+    		$model = D('Admin/Type');
     		if($model->create(I('post.'), 1))
     		{
     			if($id = $model->add())
@@ -19,11 +18,8 @@ class RoleController extends IndexController
     		}
     		$this->error($model->getError());
     	}
-        $priModel = D('privilege');
-    	$priData = $priModel->getTree();
 
-    	$this->assign('priData',$priData);
-		$this->setPageBtn('添加角色', '角色列表', U('lst?p='.I('get.p')));
+		$this->setPageBtn('添加类型', '类型列表', U('lst?p='.I('get.p')));
 		$this->display();
     }
     public function edit()
@@ -31,7 +27,7 @@ class RoleController extends IndexController
     	$id = I('get.id');
     	if(IS_POST)
     	{
-    		$model = D('Admin/Role');
+    		$model = D('Admin/Type');
     		if($model->create(I('post.'), 2))
     		{
     			if($model->save() !== FALSE)
@@ -42,25 +38,16 @@ class RoleController extends IndexController
     		}
     		$this->error($model->getError());
     	}
-    	$model = M('Role');
+    	$model = M('Type');
     	$data = $model->find($id);
     	$this->assign('data', $data);
 
-        $priModel = D('privilege');
-        $priData = $priModel->getTree();
-        $this->assign('priData',$priData);
-
-        $rpModel = M('RolePrivilege');
-        $rpData = $rpModel->field('GROUP_CONCAT(pri_id) pri_id')->where(array('role_id'=>array('eq',$id)))->find();
-        $this->assign('pri_id',$rpData['pri_id']);
-
-
-		$this->setPageBtn('修改角色', '角色列表', U('lst?p='.I('get.p')));
+		$this->setPageBtn('修改类型', '类型列表', U('lst?p='.I('get.p')));
 		$this->display();
     }
     public function delete()
     {
-    	$model = D('Admin/Role');
+    	$model = D('Admin/Type');
     	if($model->delete(I('get.id', 0)) !== FALSE)
     	{
     		$this->success('删除成功！', U('lst', array('p' => I('get.p', 1))));
@@ -73,21 +60,20 @@ class RoleController extends IndexController
     }
     public function lst()
     {
-    	$model = D('Admin/Role');
+    	$model = D('Admin/Type');
     	$data = $model->search();
     	$this->assign(array(
     		'data' => $data['data'],
     		'page' => $data['page'],
     	));
-		$this->setPageBtn('角色列表', '添加角色', U('add'));
+
+		$this->setPageBtn('类型列表', '添加类型', U('add'));
     	$this->display();
     }
+
     public function setPageBtn($pagetitle,$pagebtn,$pageurl){
         $this->assign('pagetitle',$pagetitle);
         $this->assign('pagebtn',$pagebtn);
         $this->assign('pageurl',$pageurl);
-    }
-    public function test(){
-        $this->display();
     }
 }

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" language="javascript" src="__PUBLIC__/datepicker/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+    <!--<h2>已有节点追加</h2>-->
+    <!--<ul>-->
+        <!--<li mean="热情">red</li>-->
+        <!--<li mean="冷静">blue</li>-->
+        <!--<li mean="生机">green</li>-->
+    <!--</ul>-->
+    <!--<ul>-->
+        <!--<li mean="饿">orange</li>-->
+    <!--</ul>-->
+
+    <!--<h2>事件流</h2>-->
+    <!--<div>-->
+        <!--操作事件对象-->
+    <!--</div>-->
+
+    <!--<h2>事件对象阻止浏览器默认动作（form表单提交动作）</h2>-->
+    <!--<form method="post" action="{:U(test)}">-->
+        <!--<p>用户名：<input type="text" name="username"></p>-->
+        <!--<p>密码：<input type="password" name="password"></p>-->
+        <!--<p>邮箱：<input type="text" name="email"></p>-->
+        <!--<p><input type="submit" value="注册"></p>-->
+    <!--</form>-->
+    <!--<h2>ajax请求</h2>-->
+    <!--<input type="button" value="请求" onclick="f1()"/>-->
+
+    <!--<div id="result"></div>-->
+    <!--<form method="post" action="">-->
+        <!--用户名：<input type="text" name="username" id="username">-->
+        <!--密码：<input type="password" name="password" id="password">-->
+        <!--邮箱：<input type="text" name="email" id="email">-->
+        <!--<input type="submit" value="提交">-->
+    <!--</form>-->
+
+
+    <!--<h2>jquery简单应用</h2>-->
+    <!--<p><input type="text" name="username" id="username" value="xiaoqiang"></p>-->
+    <!--<p><input type="button" value="触发" onclick="f1()"></p>-->
+    <!--<p><input type="button" value="ajax触发" onclick="f2()"></p>-->
+
+    <!--<h2>层次选择器</h2>-->
+    <!--<div>-->
+        <!--<span>张飞</span>-->
+        <!--<p>-->
+            <!--<span>赵云</span>-->
+        <!--</p>-->
+        <!--<span>关羽</span>-->
+    <!--</div>-->
+    <!--<p>link</p>-->
+    <!--<span>曹操</span>-->
+    <!--<p>吕布</p>-->
+    <!--<span>孙权</span>-->
+    <!--<div>小乔</div>-->
+    <!--<span>大乔</span>-->
+    <!--<input type="button" value="触发" onclick="f1()">-->
+
+    <!--<h1>属性操作</h1>-->
+    <!--<input type="text" class="apple" id="username" name="username" value="tom" address="beijing" />-->
+    <!--<input type="button" value="获取" onclick="f1()" />-->
+    <!--<input type="button" value="设置" onclick="f2()" />-->
+    <!--<input type="button" value="批量修改" onclick="f3()" />-->
+    <!--<input type="button" value="函数修改" onclick="f4()" />-->
+    <!--<input type="button" value="删除属性" onclick="f5()" />-->
+
+    <!--<input type="radio" class="sex" name="sex" value="a" />男&nbsp;-->
+    <!--<input type="radio" class="sex" name="sex" value="b" />女&nbsp;-->
+    <!--<input type="radio" class="sex" name="sex" value="c" />保密&nbsp;-->
+    <!--<br>-->
+    <!--<input type="button" value="获取" onclick="f1()">-->
+    <!--<input type="button" value="设置" onclick="f2()">-->
+
+    <!--爱好:-->
+    <!--<input type="checkbox" class="hby" name="hobby[]" value="1"/>篮球&nbsp;-->
+    <!--<input type="checkbox" class="hby" name="hobby[]" value="2"/>足球&nbsp;-->
+    <!--<input type="checkbox" class="hby" name="hobby[]" value="3"/>排球&nbsp;-->
+    <!--<input type="checkbox" class="hby" name="hobby[]" value="4"/>乒乓球&nbsp;-->
+
+    <!--<input type="button" value="全选" onclick="setAll()"/>-->
+    <!--<input type="button" value="全不选" onclick="setNotAll()"/>-->
+    <!--<input type="button" value="反选" onclick="setFan()"/>-->
+
+    <h2>地区三级联动</h2>
+    省份：
+    <select id="province" onchange="showcity()">
+        <option value="0">-请选择-</option>
+    </select>&nbsp;&nbsp;
+    城市：
+    <select id="city">
+        <option value="0">-请选择-</option>
+    </select>&nbsp;&nbsp;
+    地区：
+    <select id="area">
+        <option value="0">-请选择-</option>
+    </select>&nbsp;&nbsp;
+</body>
+</html>
+<script type="text/javascript">
+//    var color = ['red','blue','green'];
+//    var color_mean = ['热情','冷静','生机'];
+//    var ullist = document.createElement('ul');
+//    for (var k in color){
+//        var lii = document.createElement('li');
+//        lii.setAttribute('mean',color_mean[k]);
+//        var txt = document.createTextNode(color[k])
+//
+//        lii.appendChild(txt);
+//        ullist.appendChild(lii);
+//
+//    }
+//    document.body.appendChild(ullist);
+
+
+
+//    var blue = document.getElementsByTagName('li')[1];
+//    var second_ul = document.getElementsByTagName('ul')[1];
+//    second_ul.appendChild(blue);
+
+//    var blue = document.getElementsByTagName('li')[1];
+//    var fu_blue = blue.cloneNode(false);
+//
+//    var second_ul  = document.getElementsByTagName('ul')[1];
+//    second_ul.appendChild(fu_blue);
+
+//    function cli(evt) {
+//        var event = evt? evt:window.event;
+////        this.style.backgroundColor = 'green';
+//        console.log(event.clientX+"--"+event.clientY);
+//        console.log(event.pageX+"--"+event.pageY);
+//        console.log(event.screenX+"--"+event.screenY);
+//
+//    }
+//    var dv = document.getElementsByTagName('div')[0];
+//    dv.addEventListener('click',cli);
+//    var fm = document.getElementsByTagName('form')[0];
+//    fm.addEventListener('submit',function (evt) {
+//        //alert('邮箱不正确');
+//        //return false;
+//        evt.preventDefault();
+//    })
+
+
+//var color = ['red','yellow','black','blue'];
+//    var ullist = document.createElement('ul');
+//    document.body.appendChild(ullist);
+//    for (var k in color){
+//        var lilist = document.createElement('li')
+//        var  txt = document.createTextNode(color[k]);
+//        lilist.appendChild(txt);
+//        ullist.appendChild(lilist);
+//        lilist.addEventListener('mouseover',mouseoverli);
+//        lilist.addEventListener('mouseout',mouseoutli);
+//    }
+//
+//
+//    function mouseoverli(evt) {
+//        var evt = evt?evt:window.event;
+//        this.style.backgroundColor='green';
+//    }
+//    function mouseoutli(evt) {
+//        var evt = evt?evt:window.event;
+//        this.style.backgroundColor='#fff';
+//    }
+
+//    var age = 20;
+//    function f1() {
+//        var height = 170;
+//        console.log(age);
+//        function f2() {
+//            console.log(age+"---"+height);
+//        }
+//        f2()
+//    }
+//    f1();
+//    console.log(height);
+
+
+//    var hi = 170;
+//    function f1() {
+//        //var hi =185;
+//        function f2() {
+//
+//            //var hi=190;
+//            console.log(hi);
+//
+////            function hi() {
+////                alert('123456');
+////            }
+//        }
+//        f2();
+//    }
+//    f1();
+//    var arr = new Array();
+//    for (var i=0;i<4;i++){
+//        arr[i] = function () {
+//          console.log(i);
+//          return i;
+//        };
+//    }
+//    arr[0]();
+//    arr[1]();
+//    arr[2]();
+//    arr[3]();
+
+
+//    var obj = {name:'zenghuanxin'}
+//    console.log(obj);
+//    obj.height = 185;
+//    console.log(obj);
+
+
+//    function f1() {
+//        var xhr = new XMLHttpRequest();
+//        xhr.open('get','/index.php/Admin/Test/index/');
+//        xhr.send(null);
+//    }
+//    function showweather() {
+//        var xhr = new XMLHttpRequest();
+//        alert(123);
+//        xhr.onreadystatechange = function () {
+//            if (xhr.readyState == 4){
+//                console.log(typeof xhr.responseText);
+//
+//                eval("var info="+xhr.responseText);
+//
+//                var str = "地址："+info.weatherinfo.city +";温度："+ info.weatherinfo.temp+";风向:" + info.weatherinfo.WD;
+//                document.getElementById('result').innerHTML = str;
+//            }
+//        }
+//        xhr.open('get','test1');
+//        xhr.send(null);
+//    }
+//    window.onload = function () {
+//        showweather();
+//    }
+
+
+
+//    window.onload = function () {
+//        var fm = document.getElementsByTagName('form')[0];
+//        fm.onsubmit = function () {
+//            var nm = document.getElementById('username').value;
+//            var pwd = document.getElementById('password').value;
+//            var email = document.getElementById('email').value;
+//            var info = "name="+nm+"&pass="+pwd+"&email="+email;
+//
+//            var xhr = new XMLHttpRequest();
+//            xhr.onreadystatechange = function () {
+//                if(xhr.readyState==4){
+//                    alert(xhr.responseText);
+//                }
+//            }
+//            xhr.open('post','test2');
+//            xhr.setRequestHeader('content-type','application/x-www-form-urlencoded');
+//            xhr.send(info);
+//
+//            return false;
+//        }
+//    }
+
+
+
+//    window.onload = function () {
+//        var fm = document.getElementsByTagName('form')[0];
+//        fm.onsubmit = function () {
+//
+//            var fd = new FormData(fm);
+//
+//            var xhr = new XMLHttpRequest();
+//            xhr.onreadystatechange = function () {
+//                if (xhr.readyState == 4){
+//                    alert(xhr.responseText);
+//                }
+//            }
+//            xhr.open('post','test2');
+//            xhr.send(fd);
+//
+//            return false;
+//        }
+//    }
+
+//    function f1() {
+////        var nm = document.getElementById('username').value;
+////        console.log(nm);
+//
+//        var nm = $('#username').val();
+//        console.log(nm);
+//    }
+//    function f2() {
+//        $.get('test1',function (msg) {
+//            alert(msg);
+//        });
+//    }
+
+    
+//    function f1() {
+////        $('div span').css('background-color','blue');
+////          $('div>span').css('background-color','green');
+////        $('div+span').css('background-color','red');
+//        $('div~span').css('background-color','brown')
+//    }
+
+//    function f1() {
+//        //获取属性信息
+//        console.log($('#username').attr('type'));
+//        console.log($('#username').attr('class'));
+//        console.log($('#username').attr('id'));
+//        console.log($('#username').attr('name'));
+//        console.log($('#username').attr('value'));
+//        console.log($('#username').attr('address'));
+//    }
+//    function f2() {
+//        //修改属性信息
+//      $('#username').attr('class','username1');
+//      $('#username').attr('name','kangkang');
+//      $('#username').attr('value','yes');
+//      //$('#username').attr('type','radio');
+//      $('#username').attr('address','lunqian');
+//     // $('#username').attr('id','username2');
+//    }
+//    function f3() {
+//        //批量修改属性
+//        var jn = {name:'tel',class:'pear',value:'18659328891',address:'厦门'}
+//        $('#username').attr(jn);
+//    }
+//    function f4() {
+//        //函数返回值设置属性
+//        $('#username').attr('value',function () {
+//            return 10+30;
+//        });
+//    }
+//    function f5() {
+//        //删除属性
+//        $('#username').removeAttr('class');
+//        $('#username').removeAttr('name');
+//        $('#username').removeAttr('value');
+//        $('#username').removeAttr('address');
+//        $('#username').removeAttr('id');
+//    }
+
+
+
+//    function f1() {
+//        console.log($('.sex:checked').val());
+//    }
+//
+//    function f2() {
+//        $('.sex').val(['b'])
+//    }
+
+//    function setAll() {
+//        $('.hby').attr('checked',true);
+//    }
+////    function setNotAll() {
+////        $('.hby').removeAttr('checked');
+////    }
+//    function setNotAll() {
+//        $('.hby').attr('checked',false);
+//    }
+//    function setFan() {
+//       for(var i=0;i<$('.hby').length;i++){
+//           var flag = $('.hby:eq('+i+')').attr('checked');
+//           $('.hby:eq('+i+')').attr('checked',!flag);
+//       }
+//    }
+//    window.onload = function () {
+//        $('li').each(function (k,v) {
+//            console.log(k+"----"+v+"------"+this);
+//            f.style.color = 'blue';
+//        })
+//    }
+//    $('#ajaxrequest').click(function () {
+//        var id = 1;
+//        $.ajax({
+//            url:"{:U('test2','',false)}",
+//            data:'',
+//            dataType:'json',
+//            type:'get',
+//            success:function (data) {
+//                alert(data.pri_name);
+//            }
+//        });
+//    })
+
+    $(function () {
+       //页面加载完毕立即获得省份信息
+        //ajax去服务器端获得省份信息
+        var xmldom = null;//声明变量用于存储全部的xml document对象信息
+        var url = '__PUBLIC__/ChinaArea.xml'
+        $.ajax({
+            url:url,
+            type:'get',
+            dataType:'xml',
+            success:function (msg) {
+//                alert(msg);
+                xmldom = msg;
+//                console.log($(msg).find("province"));
+                $(msg).find("province").each(function (k,v) {
+                   var nm = $(this).attr("province");
+                   var id = $(this).attr("provinceID");
+                   $("#province").append("<option value='"+id+"'>"+nm+"</option>");
+                });
+            }
+        });
+    });
+    function showcity() {
+        var pro = $("#province").val();
+
+    }
+
+
+</script>
