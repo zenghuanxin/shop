@@ -138,3 +138,24 @@
 [22-Dec-2017 10:18:57 PRC] PHP Parse error:  syntax error, unexpected '<' in D:\phpStudy\WWW\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php on line 32
 [22-Dec-2017 10:18:58 PRC] PHP Parse error:  syntax error, unexpected '<' in D:\phpStudy\WWW\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php on line 32
 [22-Dec-2017 10:18:58 PRC] PHP Parse error:  syntax error, unexpected '<' in D:\phpStudy\WWW\shop\Application\Runtime\Cache\Admin\9e1e5841af12860e6ba08b9e55eb68af.php on line 32
+[27-Dec-2017 12:00:56 PRC] PHP Fatal error:  Call to undefined function Admin\Model\uploadOne() in D:\phpStudy\WWW\shop\Application\Admin\Model\BrandModel.class.php on line 36
+[29-Dec-2017 10:21:21 PRC] PHP Parse error:  syntax error, unexpected '[' in D:\phpStudy\WWW\shop\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php on line 64
+[29-Dec-2017 11:02:36 PRC] PHP Parse error:  syntax error, unexpected '<', expecting ')' in D:\phpStudy\WWW\shop\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php on line 135
+[29-Dec-2017 11:02:37 PRC] PHP Parse error:  syntax error, unexpected '<', expecting ')' in D:\phpStudy\WWW\shop\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php on line 135
+[29-Dec-2017 11:02:51 PRC] PHP Parse error:  syntax error, unexpected '<', expecting ')' in D:\phpStudy\WWW\shop\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php on line 135
+[29-Dec-2017 11:02:52 PRC] PHP Parse error:  syntax error, unexpected '<', expecting ')' in D:\phpStudy\WWW\shop\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php on line 135
+[29-Dec-2017 11:03:40 PRC] PHP Parse error:  syntax error, unexpected '<', expecting ')' in D:\phpStudy\WWW\shop\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php on line 135
+[29-Dec-2017 11:03:40 PRC] PHP Parse error:  syntax error, unexpected '<', expecting ')' in D:\phpStudy\WWW\shop\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php on line 135
+[29-Dec-2017 11:05:17 PRC] PHP Parse error:  syntax error, unexpected '<', expecting ')' in D:\phpStudy\WWW\shop\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php on line 135
+[29-Dec-2017 11:05:18 PRC] PHP Parse error:  syntax error, unexpected '<', expecting ')' in D:\phpStudy\WWW\shop\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php on line 135
+[29-Dec-2017 11:05:18 PRC] PHP Parse error:  syntax error, unexpected '<', expecting ')' in D:\phpStudy\WWW\shop\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php on line 135
+[29-Dec-2017 11:05:18 PRC] PHP Parse error:  syntax error, unexpected '<', expecting ')' in D:\phpStudy\WWW\shop\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php on line 135
+[29-Dec-2017 11:05:19 PRC] PHP Parse error:  syntax error, unexpected '<', expecting ')' in D:\phpStudy\WWW\shop\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php on line 135
+[29-Dec-2017 11:05:19 PRC] PHP Parse error:  syntax error, unexpected '<', expecting ')' in D:\phpStudy\WWW\shop\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php on line 135
+[29-Dec-2017 15:40:34 PRC] PHP Parse error:  syntax error, unexpected '<', expecting ']' in D:\phpStudy\WWW\shop\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php on line 209
+[29-Dec-2017 15:40:52 PRC] PHP Parse error:  syntax error, unexpected '<', expecting ']' in D:\phpStudy\WWW\shop\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php on line 209
+[29-Dec-2017 15:40:52 PRC] PHP Parse error:  syntax error, unexpected '<', expecting ']' in D:\phpStudy\WWW\shop\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php on line 209
+[29-Dec-2017 16:53:23 PRC] PHP Parse error:  syntax error, unexpected ')' in D:\phpStudy\WWW\shop\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php on line 234
+[29-Dec-2017 17:26:40 PRC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in D:\phpStudy\WWW\shop\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php on line 235
+[29-Dec-2017 17:53:11 PRC] PHP Parse error:  syntax error, unexpected '<' in D:\phpStudy\WWW\shop\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php on line 241
+[29-Dec-2017 17:53:12 PRC] PHP Parse error:  syntax error, unexpected '<' in D:\phpStudy\WWW\shop\Application\Runtime\Cache\Admin\608b0c961c661bd6d45820311b4b75a7.php on line 241

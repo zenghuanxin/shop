@@ -1,6 +1,5 @@
 <?php
 namespace Gii\Controller;
-//use function Sodium\add;
 use Think\Controller;
 define('GII_PATH', APP_PATH.'Gii/');
 define('GII_CONFIG_PATH', GII_PATH.'Table_configs/');
@@ -68,47 +67,49 @@ class IndexController extends Controller
 			include(GII_TEMPLATE_PATH.'edit.html');
 			$str = ob_get_clean();
 			file_put_contents($v1Dir.'/edit.html', $str);
-
-			/****************在生成代码之前自动插入权限*******************/
-			//新生成的代码所在的上一级的权限的名称
-            $topPriName = $config['topPriName'];
-            $priModel =  M('Privilege');
-            $topPriId =$priModel->field('id')->where(array('pri_name'=>$topPriName))->find();
-
-            //先判断有咩有列表的权限
-            $has = $priModel->field('id')->where(array('pri_name'=>$config['tableCnName'].'列表'))->find();
-            //在这个顶级权限下添加一个XX列表的权限
-            if ($has == 0) {
-                $listPriId = $priModel->add(array(
-                    'pri_name' => $config['tableCnName'] . '列表',
-                    'parent_id' => $topPriId['id'],
-                    'module_name' => $config['moduleName'],
-                    'controller_name' => $tpName,
-                    'action_name' => 'lst',
-                ));
-                $priModel->add(array(
-                    'pri_name' => '添加' . $config['tableCnName'],
-                    'parent_id' => $listPriId,
-                    'module_name' => $config['moduleName'],
-                    'controller_name' => $tpName,
-                    'action_name' => 'add',
-                ));
-                $priModel->add(array(
-                    'pri_name' => '修改' . $config['tableCnName'],
-                    'parent_id' => $listPriId,
-                    'module_name' => $config['moduleName'],
-                    'controller_name' => $tpName,
-                    'action_name' => 'edit',
-                ));
-                $priModel->add(array(
-                    'pri_name' => '删除' . $config['tableCnName'],
-                    'parent_id' => $listPriId,
-                    'module_name' => $config['moduleName'],
-                    'controller_name' => $tpName,
-                    'action_name' => 'delete',
-                ));
-            }
-
+			/*************************** 插入相应的权限 ****************************/
+			// 先从配置文件中取出顶级权限的名称是什么
+			$topPriName = $config['topPriName'];
+			// 取出这个顶级权限的ID
+			$priModel = M('Privilege');
+			$topPriId = $priModel->field('id')->where(array('pri_name'=>array('eq', $topPriName)))->find();
+			
+			// 先判断有没有列表的权限
+			$has = $priModel->field('id')->where(array('pri_name'=>array('eq', $config['tableCnName'] . '列表')))->count();
+			if($has == 0)
+			{
+				// 在这个顶级权限下添加一个XX列表的权限
+				$lisPriId = $priModel->add(array(
+					'pri_name' => $config['tableCnName'] . '列表',
+					'parent_id' => $topPriId['id'],
+					'module_name' => $config['moduleName'],
+					'controller_name' => $tpName,
+					'action_name' => 'lst',
+				));
+				// 在列表权限下再添加三个权限
+				$priModel->add(array(
+					'pri_name' => '添加'.$config['tableCnName'],
+					'parent_id' => $lisPriId,
+					'module_name' => $config['moduleName'],
+					'controller_name' => $tpName,
+					'action_name' => 'add',
+				));
+				$priModel->add(array(
+					'pri_name' => '修改'.$config['tableCnName'],
+					'parent_id' => $lisPriId,
+					'module_name' => $config['moduleName'],
+					'controller_name' => $tpName,
+					'action_name' => 'edit',
+				));
+				$priModel->add(array(
+					'pri_name' => '删除'.$config['tableCnName'],
+					'parent_id' => $lisPriId,
+					'module_name' => $config['moduleName'],
+					'controller_name' => $tpName,
+					'action_name' => 'delete',
+				));
+			}
+			
 			$this->success('代码生成成功！');
 			exit;
 		}

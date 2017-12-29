@@ -10,20 +10,10 @@ class GoodsModel extends Model
 		array('goods_name', '1,45', '商品名称的值最长不能超过 45 个字符！', 1, 'length', 3),
 		array('cat_id', 'require', '主分类的id不能为空！', 1, 'regex', 3),
 		array('cat_id', 'number', '主分类的id必须是一个整数！', 1, 'regex', 3),
-		array('brand_id', 'require', '品牌的id不能为空！', 1, 'regex', 3),
-		array('brand_id', 'number', '品牌的id必须是一个整数！', 1, 'regex', 3),
 		array('market_price', 'currency', '市场价必须是货币格式！', 2, 'regex', 3),
 		array('shop_price', 'currency', '本店价必须是货币格式！', 2, 'regex', 3),
-		array('jifen', 'require', '赠送积分不能为空！', 1, 'regex', 3),
-		array('jifen', 'number', '赠送积分必须是一个整数！', 1, 'regex', 3),
-		array('jyz', 'require', '赠送经验值不能为空！', 1, 'regex', 3),
-		array('jyz', 'number', '赠送经验值必须是一个整数！', 1, 'regex', 3),
-		array('jifen_price', 'require', '如果要用积分兑换，需要的积分数不能为空！', 1, 'regex', 3),
-		array('jifen_price', 'number', '如果要用积分兑换，需要的积分数必须是一个整数！', 1, 'regex', 3),
 		array('is_promote', 'number', '是否促销必须是一个整数！', 2, 'regex', 3),
 		array('promote_price', 'currency', '促销价必须是货币格式！', 2, 'regex', 3),
-		array('promote_start_time', 'number', '促销开始时间必须是一个整数！', 2, 'regex', 3),
-		array('promote_end_time', 'number', '促销结束时间必须是一个整数！', 2, 'regex', 3),
 		array('is_hot', 'number', '是否热卖必须是一个整数！', 2, 'regex', 3),
 		array('is_new', 'number', '是否新品必须是一个整数！', 2, 'regex', 3),
 		array('is_best', 'number', '是否精品必须是一个整数！', 2, 'regex', 3),
@@ -88,6 +78,13 @@ class GoodsModel extends Model
 	// 添加前
 	protected function _before_insert(&$data, $option)
 	{
+
+	    $data['addtime'] = time();
+        if ($data['is_promote']==1){
+            $data['promote_start_time'] = strtotime($data['promote_start_time']);
+            $data['promote_end_time'] = strtotime($data['promote_end_time']);
+        }
+
 		if(isset($_FILES['logo']) && $_FILES['logo']['error'] == 0)
 		{
 			$ret = uploadOne('logo', 'Admin', array(
@@ -105,9 +102,102 @@ class GoodsModel extends Model
 			}
 		}
 	}
-	// 修改前
+	protected function _after_insert(&$data, $options)
+    {
+        /*************处理扩展分类表*************/
+        $extcat = I('post.ext_cat_id');
+        if ($extcat){
+            $extcatModel = M('GoodsCat');
+            foreach ($extcat as $k=>$v){
+                if (empty($v))
+                    continue;
+                $extcatModel->add(array(
+                    'goods_id'=>$data['id'],
+                    'cat_id'=>$v
+                ));
+            }
+        }
+        /*************处理会员价格***********/
+        $mp = I('post.mp');
+        if ($mp){
+            $mpModel = M('MemberPrice');
+            foreach ($mp as $k=>$v){
+                if (empty($v))
+                    continue;
+                $mpModel->add(array(
+                    'goods_id'=>$data['id'],
+                    'level_id'=>$k,
+                    'price'=>$v
+                ));
+            }
+        }
+
+        /************处理属性***************/
+        $ga = I('post.ga');
+        $attr_price = I('post.attr_price');
+
+        if ($ga){
+            $gaModel = M('GoodsAttr');
+            foreach ($ga as $k=>$v){
+                foreach ($v as $k1=>$v1){
+                    if (empty($v1)){
+                        continue;
+                    }
+                    $gaModel->add(array(
+                        'goods_id'=>$data['id'],
+                        'attr_id'=>$k,
+                        'attr_value'=>$v1,
+                        'attr_price'=>$attr_price[$k][$k1]
+                    ));
+                }
+
+            }
+        }
+
+        /*************处理图片****************/
+        //先判断批量上传的数组中有没有上传一张图片的
+        if (hasImage('pics')){
+
+            $gpModel = M('GoodsPics');
+            //批量上传的图片改造成每次上传一张图片的形式
+            $pics = array();
+            foreach ($_FILES['pics']['name'] as $k =>$v){
+                if ($_FILES['pics']['error'][$k]!=0){
+                    continue;
+                }
+                $pic = array();
+                $pic['name'] = $v;
+                $pic['type'] = $_FILES['pics']['type'][$k];
+                $pic['tmp_name'] = $_FILES['pics']['tmp_name'][$k];
+                $pic['error'] = $_FILES['pics']['error'][$k];
+                $pic['size'] = $_FILES['pics']['size'][$k];
+                $pics[] = $pic;
+            }
+        }
+        // 在后面调用uploadOne方法时会使用$_FILES数组上传图片，所以我们要把我们处理好的数组赎给$_FILES这样上传时使用的就是我们处理好的数组
+        $_FILES = $pics;
+        //循环每次上传一张图片
+       foreach ($pics as $k=>$v){
+           $res = uploadOne($k,'Goods',array(
+              array(150,150)
+           ));
+           if ($res['ok']==1){
+               $gpModel->add(array(
+                  'goods_id'=>$data['id'],
+                  'pic'=>$res['images'][0],
+                  'sm_pic'=>$res['images'][1]
+               ));
+           }
+       }
+
+    }
+
+    // 修改前
 	protected function _before_update(&$data, $option)
 	{
+        // 如果没有勾选促销价格就手动设置为更新成0
+        if(!isset($_POST['is_promote']))
+            $data['is_promote'] = 0;
 		if(isset($_FILES['logo']) && $_FILES['logo']['error'] == 0)
 		{
 			$ret = uploadOne('logo', 'Admin', array(
