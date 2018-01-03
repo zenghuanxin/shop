@@ -85,21 +85,21 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="label"><input  name="is_promote" type="checkbox"value="1" onclick="if($(this).attr('checked')) $('.promote_price').removeAttr('disabled'); else $('.promote_price').attr('disabled','disabled');"/>促销价：</td>
+                    <td class="label"><input value="1" name="is_promote" onclick="if($(this).attr('checked')) $('.promote_price').removeAttr('disabled');else $('.promote_price').attr('disabled', 'disabled');" type="checkbox" />促销价：</td>
                     <td>
-                        <input class="promote_price" type="text" name="promote_price" value="0.00" disabled="disabled"/>
+                        <input class="promote_price" disabled="disabled" type="text" name="promote_price" value="0.00" />
                     </td>
                 </tr>
                 <tr>
                     <td class="label">促销开始时间：</td>
                     <td>
-                        <input class="promote_price" id="promote_start_time" type="text" name="promote_start_time" value="0" disabled="disabled" />
+                        <input class="promote_price" disabled="disabled" id="promote_start_time" type="text" name="promote_start_time" />
                     </td>
                 </tr>
                 <tr>
                     <td class="label">促销结束时间：</td>
                     <td>
-                        <input class="promote_price" id="promote_end_time" type="text" name="promote_end_time" value="0" disabled="disabled" />
+                        <input class="promote_price" disabled="disabled" id="promote_end_time" type="text" name="promote_end_time" />
                     </td>
                 </tr>
                 <tr>
@@ -216,6 +216,13 @@
     </div>
 </div>
 <script>
+    $("#promote_start_time").datepicker();
+    $("#promote_end_time").datepicker();
+    UE.getEditor('goods_desc', {
+        "initialFrameWidth" : "100%",   // 宽
+        "initialFrameHeight" : 200,      // 高
+        "maximumWords" : 10000            // 最大可以输入的字符数量
+    });
     $(function () {
         $('#tabbar-div p span').click(function () {
             //获取点击的是第几个按钮
@@ -259,7 +266,7 @@
                                 html += "</select>";
                             }
                             if (v.attr_type==1)
-                                html +=" 属性价格"+"<input type='text' name='attr_price["+v.id+"][]'/>";
+                                html +="&nbsp;属性价格：￥"+"<input type='text' name='attr_price["+v.id+"][]' size='10'/>元";
                             html += "</p>";
                         });
                         $('.attr_container').html(html);
@@ -283,14 +290,5 @@
         }else
             p.remove();
     }
-$("#promote_start_time").datepicker(); 
-$("#promote_end_time").datepicker(); 
-UE.getEditor('goods_desc', {
-	"initialFrameWidth" : "100%",   // 宽
-	"initialFrameHeight" : 200,      // 高
-	"maximumWords" : 10000            // 最大可以输入的字符数量
-});
-
-
 
 </script>

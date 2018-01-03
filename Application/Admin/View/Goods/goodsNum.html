@@ -1,0 +1,65 @@
+<layout name="Index/header_footer" />
+<!-- 列表 -->
+<div class="list-div" id="listDiv">
+    <form action="__SELF__" method="post">
+	<table cellpadding="3" cellspacing="1">
+    	<tr>
+            <volist name="attr" id="vo">
+                <th>{$vo[0]['attr_name']}</th>
+            </volist>
+           <th width="250">库存</th>
+           <th width="200">操作</th>
+        </tr>
+        <volist name="gnData" id="gn">
+        <tr>
+            <volist name="attr" id="vo">
+                <td>
+                    <select name='goods_attr_id[]'>
+                        <option value="">请选择</option>
+                        <volist name="vo" id="vo1">
+                            <?php
+                            if(strpos(','.$gn['goods_attr_id'].',',','.$vo1['id'].',')!==false)
+                                $select = 'selected = "selected"';
+                            else
+                                $select = '';
+                         ?>
+                            <option value="{$vo1.id}" {$select}>{$vo1.attr_value}</option>
+                        </volist>
+                    </select>
+                </td>
+            </volist>
+            <td><input type="text" name="goods_num[]" value="{$gn.goods_number}"/></td>
+            <td><input onclick="addnew(this)" type="button" value="+"/></td>
+        </tr>
+        </volist>
+        <tr class="inputbut">
+            <td colspan="<?php echo count($attr)+2;?>" align="center">
+                <input type="submit" value="提交"/>
+            </td>
+        </tr>
+
+	</table>
+    </form>
+</div>
+<script>
+$('#addtimefrom').datepicker(); $('#addtimeto').datepicker();
+
+//点击加号赋值一行库存
+function addnew(btn) {
+    //获取点击按钮所在tr
+    var tr = $(btn).parent().parent();
+    if ($(btn).val()=='+'){
+        //克隆tr
+        var newtr = tr.clone();
+        //把+变成-
+        newtr.find(':button').val('-')
+        //把tr加到table中
+        $('.inputbut').before(newtr);
+    }else {
+        tr.remove();
+    }
+
+
+}
+
+</script>

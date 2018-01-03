@@ -2,23 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01904b38-c087-4406-85ea-09f575264ab0" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Gii/Table_configs/php34_attribute.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Gii/Table_configs/php34_brand.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Gii/Table_configs/php34_category.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Gii/Table_configs/php34_member_level.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Gii/Table_configs/php34_privilege.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Gii/Table_configs/php34_type.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Goods/goodsNum.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Goods/recycleLst.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/0dfec61edd66f450033aa87c28a760f4.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/12cf6a5c74297688873998de0720405d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/1c990affb7d51d2df56dce018d5c78a2.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/22b927bcab08952e9a364dab9343db03.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/2e0a6b0b98cf96bc15633704312e45ee.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/3268fbbbd0eb3ffe30140f78ff508f86.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/395c0ba78bddab9d6617dcec0f2fd9a9.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/5f62cf3ecb66a47dcb1a9b7512abfb3d.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/64431effeb3c8b31c1cd32ecd958c163.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/83ef9968a31ad0939d8603a38f8428da.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/9e1e5841af12860e6ba08b9e55eb68af.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/b0f0b709690a72033d17719e8059053c.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/bdb24232b8dcb412d439a202b1caa9a5.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/ca2b6a394585d183c51bfce5f760acde.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/d12b6d6cfaa93439758dd8f98ee55ea0.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/d5cf4ee8d8b1c3b7b0165565e205fdab.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/e6828e81e4c322c2eebadec1c0b7d02b.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Gii/3b695d6790f3ca1babf02ccf3eb7ac71.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Gii/ca2b6a394585d183c51bfce5f760acde.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/17_12_22.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/17_12_25.log" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/GoodsController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/GoodsController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Model/GoodsModel.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Model/GoodsModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Model/PrivilegeModel.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Model/PrivilegeModel.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Goods/add.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Goods/add.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Goods/edit.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Goods/edit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Goods/lst.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Goods/lst.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Common/Common/function.php" afterPath="$PROJECT_DIR$/Application/Common/Common/function.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Gii/Controller/IndexController.class.php" afterPath="$PROJECT_DIR$/Application/Gii/Controller/IndexController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Gii/Table_configs/php34_goods.php" afterPath="$PROJECT_DIR$/Application/Gii/Table_configs/php34_goods.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/346dfcdf6ec8d3c93d33b5eb4f636a21.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/83ef9968a31ad0939d8603a38f8428da.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/83ef9968a31ad0939d8603a38f8428da.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php_errors.log" afterPath="$PROJECT_DIR$/php_errors.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,40 +46,36 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GoodsController.class.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GoodsController.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/GoodsController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="112" column="40" lean-forward="false" selection-start-line="112" selection-start-column="40" selection-end-line="112" selection-end-column="40" />
+            <state relative-caret-position="304">
+              <caret line="200" column="54" lean-forward="false" selection-start-line="200" selection-start-column="54" selection-end-line="200" selection-end-column="54" />
+              <folding>
+                <marker date="1514974695310" expanded="true" signature="7130:7405" ph="select a.*,b... shop_goods_attr" />
+                <marker date="1514974695310" expanded="true" signature="7130:7415" ph="select a.*,b... shop_goods_attr" />
+                <marker date="1514974695310" expanded="true" signature="7290:7388" ph="select attr_... shop_goods_attr" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="goodsNum.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Admin/View/Goods/goodsNum.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="725">
+              <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Application/Admin/View/Goods/edit.html">
+      <file leaf-file-name="lst.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Admin/View/Goods/lst.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="284" column="38" lean-forward="true" selection-start-line="284" selection-start-column="38" selection-end-line="284" selection-end-column="38" />
-              <folding>
-                <element signature="e#6830#6836#0" expanded="true" />
-                <element signature="e#6837#6843#0" expanded="true" />
-                <element signature="e#6970#6976#0" expanded="true" />
-                <element signature="e#6977#6983#0" expanded="true" />
-                <element signature="e#7255#7261#0" expanded="true" />
-                <element signature="e#7262#7268#0" expanded="true" />
-                <element signature="e#7395#7401#0" expanded="true" />
-                <element signature="e#7402#7408#0" expanded="true" />
-                <element signature="e#7682#7688#0" expanded="true" />
-                <element signature="e#7689#7695#0" expanded="true" />
-                <element signature="e#7824#7830#0" expanded="true" />
-                <element signature="e#7831#7837#0" expanded="true" />
-                <element signature="e#8119#8125#0" expanded="true" />
-                <element signature="e#8126#8132#0" expanded="true" />
-                <element signature="e#8268#8274#0" expanded="true" />
-                <element signature="e#8275#8281#0" expanded="true" />
-                <element signature="n#style#0;n#option#0;n#volist#0;n#select#0;n#td#1;n#tr#0;n#table#3;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="1290">
+              <caret line="82" column="39" lean-forward="true" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -93,8 +104,9 @@
       <find>encSecKey</find>
       <find>hlposttag</find>
       <find>hlpretag</find>
-      <find>iv</find>
       <find>params</find>
+      <find>attr_value</find>
+      <find>attr_price</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -103,11 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Application/Admin/View/Goods/goodsAdd.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/Goods/goodsList.html" />
-        <option value="$PROJECT_DIR$/db.sql" />
-        <option value="$PROJECT_DIR$/Application/Gii/Table_configs/shop_privilege.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/index/menu.html" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/PrivilegeController.class.php" />
         <option value="$PROJECT_DIR$/Application/Gii/Table_configs/shop_admin.php" />
         <option value="$PROJECT_DIR$/Public/Admin/Js/tron.js" />
@@ -144,16 +151,21 @@
         <option value="$PROJECT_DIR$/Application/Admin/Model/PrivilegeModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Gii/Table_configs/shop_brand.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/BrandController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Common/Common/function.php" />
         <option value="E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150425/www.34.com.代码/Application/Admin/View/Goods/add.html" />
         <option value="$PROJECT_DIR$/Application/Gii/Table_configs/shop_member_level.php" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/MemberLevelController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Runtime/Cache/Admin/608b0c961c661bd6d45820311b4b75a7.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/View/Goods/add.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/Model/GoodsModel.class.php" />
         <option value="E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150426/www.34.com.代码/Application/Admin/Controller/GoodsController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Admin/Controller/GoodsController.class.php" />
+        <option value="$PROJECT_DIR$/Application/Runtime/Cache/Admin/608b0c961c661bd6d45820311b4b75a7.php" />
+        <option value="E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150426/www.34.com.代码/Application/Admin/View/Goods/add.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Goods/add.html" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Goods/edit.html" />
+        <option value="$PROJECT_DIR$/Application/Common/Common/function.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/Model/GoodsModel.class.php" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Goods/recycleLst.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Goods/goodNum.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Goods/lst.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/View/Goods/goodsNum.html" />
+        <option value="$PROJECT_DIR$/Application/Admin/Controller/GoodsController.class.php" />
       </list>
     </option>
   </component>
@@ -165,10 +177,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-3" />
-    <option name="y" value="10" />
+    <option name="x" value="-48" />
+    <option name="y" value="26" />
     <option name="width" value="919" />
-    <option name="height" value="998" />
+    <option name="height" value="997" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="添加" />
@@ -281,28 +293,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Model" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -310,22 +300,22 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xiaoli" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\phpStudy\WWW\shop\ThinkPHP\Library\Org" />
+      <recent name="D:\phpStudy\WWW\shop\Application" />
+      <recent name="D:\phpStudy\WWW\shop\Public" />
+      <recent name="D:\phpStudy\WWW\shop\Application\Gii\Controller" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\phpStudy\WWW\shop\Application\Admin\View\Goods" />
       <recent name="D:\phpStudy\WWW\shop\Application" />
       <recent name="D:\phpStudy\WWW\shop\Application\Admin\Public" />
       <recent name="D:\phpStudy\WWW\shop\Public\Admin" />
       <recent name="D:\phpStudy\WWW\shop\Application\Admin\View\Test" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\phpStudy\WWW\shop\ThinkPHP\Library\Org" />
-      <recent name="D:\phpStudy\WWW\shop\Application" />
-      <recent name="D:\phpStudy\WWW\shop\Public" />
-      <recent name="D:\phpStudy\WWW\shop\Application\Gii\Controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -437,18 +427,18 @@
       <workItem from="1513844267578" duration="16699000" />
       <workItem from="1514341750482" duration="16781000" />
       <workItem from="1514509953940" duration="7244000" />
-      <workItem from="1514530703110" duration="11055000" />
+      <workItem from="1514530703110" duration="45573000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203490000" />
+    <option name="totallyTimeSpent" value="238008000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="10" width="919" height="998" extended-state="1" />
+    <frame x="-48" y="26" width="919" height="997" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23058636" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18936877" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
@@ -487,32 +477,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$EXa0.288/three/index.html" />
-    <entry file="file://E:/BaiduNetdiskDownload/最新PHP视频教程全套素材、笔记文档（完整版）(更多内容请关注xinsz08)/PHP 素材/14、电子商城项目/20150423/db.sql" />
-    <entry file="file://E:/BaiduNetdiskDownload/最新PHP视频教程全套素材、笔记文档（完整版）(更多内容请关注xinsz08)/PHP 素材/8、jquery/20150401/代码/three/index.html" />
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Test/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="389" column="0" lean-forward="false" selection-start-line="389" selection-start-column="0" selection-end-line="389" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/TestController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="39" column="51" lean-forward="false" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/libsodium/libsodium.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6375">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/BaiduNetdiskDownload/最新PHP视频教程全套素材、笔记文档（完整版）(更多内容请关注xinsz08)/PHP 素材/14、电子商城项目/20150423/www.34.com.代码.全天/www.34.com.代码.全天/Application/Gii/Controller/IndexController.class.php" />
-    <entry file="file://E:/BaiduNetdiskDownload/最新PHP视频教程全套素材、笔记文档（完整版）(更多内容请关注xinsz08)/PHP 素材/14、电子商城项目/20150423/www.34.com.代码.全天/www.34.com.代码.全天/db.sql" />
     <entry file="file://$PROJECT_DIR$/Application/Gii/Table_configs/shop_privilege.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -747,22 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Runtime/Cache/Admin/608b0c961c661bd6d45820311b4b75a7.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="134" column="60" lean-forward="false" selection-start-line="134" selection-start-column="56" selection-end-line="134" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Goods/lst.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150425/www.34.com.代码/Application/Admin/View/Goods/edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1225">
@@ -771,85 +719,148 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Runtime/Cache/Admin/608b0c961c661bd6d45820311b4b75a7.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2350">
+          <caret line="134" column="25" lean-forward="true" selection-start-line="134" selection-start-column="25" selection-end-line="134" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Runtime/Logs/18_01_02.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="56" column="38" lean-forward="false" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/date/date.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150426/www.34.com.代码/Application/Admin/View/Goods/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="220" column="0" lean-forward="false" selection-start-line="220" selection-start-column="0" selection-end-line="227" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/View/Goods/add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="87" column="62" lean-forward="false" selection-start-line="87" selection-start-column="62" selection-end-line="87" selection-end-column="62" />
+        <state relative-caret-position="296">
+          <caret line="13" column="12" lean-forward="false" selection-start-line="101" selection-start-column="113" selection-end-line="101" selection-end-column="129" />
           <folding>
-            <element signature="e#3099#3105#0" expanded="true" />
-            <element signature="e#3328#3334#0" expanded="true" />
-            <element signature="e#3564#3570#0" expanded="true" />
-            <element signature="n#style#0;n#table#1;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#2;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#3;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#option#0;n#volist#0;n#select#0;n#td#1;n#tr#0;n#table#3;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#4;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <marker date="1514878585140" expanded="true" signature="12011:12017" ph=" " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150426/www.34.com.代码/Application/Admin/View/Goods/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1825">
+          <caret line="50" column="42" lean-forward="false" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="552" column="9" lean-forward="false" selection-start-line="552" selection-start-column="9" selection-end-line="552" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Common/Common/function.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="74" column="18" lean-forward="false" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="18" />
+        <state relative-caret-position="296">
+          <caret line="84" column="9" lean-forward="false" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/GoodsController.class.php">
+    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150426/www.34.com.代码/Application/Admin/Model/GoodsModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="112" column="40" lean-forward="false" selection-start-line="112" selection-start-column="40" selection-end-line="112" selection-end-column="40" />
+        <state relative-caret-position="-1150">
+          <caret line="38" column="53" lean-forward="true" selection-start-line="37" selection-start-column="8" selection-end-line="38" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150426/www.34.com.代码/Application/Admin/Controller/GoodsController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="123" column="41" lean-forward="true" selection-start-line="123" selection-start-column="41" selection-end-line="123" selection-end-column="41" />
+        <state relative-caret-position="-651">
+          <caret line="161" column="71" lean-forward="true" selection-start-line="161" selection-start-column="8" selection-end-line="161" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150426/www.34.com.代码/Application/Admin/View/Goods/edit.html">
+    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150426/www.34.com.代码/Application/Common/Common/function.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="247" column="8" lean-forward="true" selection-start-line="247" selection-start-column="8" selection-end-line="247" selection-end-column="8" />
+        <state relative-caret-position="363">
+          <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="120" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/Model/GoodsModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="84" column="77" lean-forward="true" selection-start-line="84" selection-start-column="77" selection-end-line="84" selection-end-column="77" />
+        <state relative-caret-position="950">
+          <caret line="38" column="43" lean-forward="false" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/View/Goods/edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="284" column="38" lean-forward="true" selection-start-line="284" selection-start-column="38" selection-end-line="284" selection-end-column="38" />
+        <state relative-caret-position="225">
+          <caret line="276" column="20" lean-forward="true" selection-start-line="276" selection-start-column="20" selection-end-line="276" selection-end-column="20" />
           <folding>
-            <element signature="e#6830#6836#0" expanded="true" />
-            <element signature="e#6837#6843#0" expanded="true" />
-            <element signature="e#6970#6976#0" expanded="true" />
-            <element signature="e#6977#6983#0" expanded="true" />
-            <element signature="e#7255#7261#0" expanded="true" />
-            <element signature="e#7262#7268#0" expanded="true" />
-            <element signature="e#7395#7401#0" expanded="true" />
-            <element signature="e#7402#7408#0" expanded="true" />
-            <element signature="e#7682#7688#0" expanded="true" />
-            <element signature="e#7689#7695#0" expanded="true" />
-            <element signature="e#7824#7830#0" expanded="true" />
-            <element signature="e#7831#7837#0" expanded="true" />
-            <element signature="e#8119#8125#0" expanded="true" />
-            <element signature="e#8126#8132#0" expanded="true" />
-            <element signature="e#8268#8274#0" expanded="true" />
-            <element signature="e#8275#8281#0" expanded="true" />
-            <element signature="n#style#0;n#option#0;n#volist#0;n#select#0;n#td#1;n#tr#0;n#table#3;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#2;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#4;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Goods/recycleLst.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="88" column="17" lean-forward="true" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Goods/lst.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1290">
+          <caret line="82" column="39" lean-forward="true" selection-start-line="82" selection-start-column="39" selection-end-line="82" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Goods/goodsNum.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/GoodsController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="200" column="54" lean-forward="false" selection-start-line="200" selection-start-column="54" selection-end-line="200" selection-end-column="54" />
+          <folding>
+            <marker date="1514974695310" expanded="true" signature="7130:7405" ph="select a.*,b... shop_goods_attr" />
+            <marker date="1514974695310" expanded="true" signature="7130:7415" ph="select a.*,b... shop_goods_attr" />
+            <marker date="1514974695310" expanded="true" signature="7290:7388" ph="select attr_... shop_goods_attr" />
           </folding>
         </state>
       </provider>

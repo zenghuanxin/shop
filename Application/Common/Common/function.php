@@ -102,3 +102,10 @@ function hasImage($imgName)
     }
     return FALSE;
 }
+
+function attr_id_sort($a, $b)
+{
+    if ($a['attr_id'] == $b['attr_id'])
+        return 0;
+    return ($a['attr_id'] < $b['attr_id']) ? -1 : 1;
+}
