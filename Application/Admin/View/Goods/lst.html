@@ -67,6 +67,7 @@
             <th >新品</th>
             <th >精品</th>
             <th >上架</th>
+			<th >库存</th>
             <th >排序</th>
 			<th width="200">操作</th>
         </tr>
@@ -80,6 +81,7 @@
 				<td><eq name="vo.is_new" value="1">是<else/>否</eq></td>
 				<td><eq name="vo.is_best" value="1">是<else/>否</eq></td>
 				<td><eq name="vo.is_on_sale" value="1">是<else/>否</eq></td>
+				<td>{$vo.num}</td>
 				<td>{$vo.sort_num}</td>
 		        <td align="center">
 					<a href="<?php echo U('goodsNum?id='.$vo['id'].'&p='.I('get.p')); ?>" title="库存">库存</a> |

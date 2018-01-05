@@ -64,4 +64,37 @@ class CategoryModel extends Model
 			$this->execute("DELETE FROM shop_category WHERE id IN($children)");
 		}
 	}
+
+	public function getCategory(){
+
+	    //先从缓存中取数据
+        $data = S('catData');
+        if ($data){
+            return $data;
+        }else{
+            //先获取所有分类
+            $catData = $this->select();
+            $data =array();
+            //获取顶级分类
+            foreach ($catData as $k=>$v){
+                if ($v['parent_id']==0){
+                    //获取二级分类
+                    foreach ($catData as $k1=>$v1){
+                        if ($v1['parent_id'] == $v['id']){
+                            //获取三级分类
+                            foreach ($catData as $k2=>$v2){
+                                if ($v2['parent_id']==$v1['id']){
+                                    $v1['children'][$k2] = $v2;
+                                }
+                            }
+                            $v['children'][$k1] =$v1;
+                        }
+                    }
+                    $data[] = $v;
+                }
+            }
+            S('catData',$data);
+            return $data;
+        }
+    }
 }

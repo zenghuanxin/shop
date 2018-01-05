@@ -21,4 +21,11 @@ return array(
     //'SHOW_PAGE_TRACE' =>true,
     /***********MD5_KEY******************/
     'MD5_KEY'   =>'siodbbdosodk!sfds54351',
+
+    /************** 发邮件的配置 ***************/
+    'MAIL_ADDRESS' => '18659328891@163.com',   // 发货人的email
+    'MAIL_FROM' => '18659328891',      // 发货人姓名
+    'MAIL_SMTP' => 'smtp.163.com',      // 邮件服务器的地址
+    'MAIL_LOGINNAME' => '18659328891',
+    'MAIL_PASSWORD' => 'zhx413247939',
 );

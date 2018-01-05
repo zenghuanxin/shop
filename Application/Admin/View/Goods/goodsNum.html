@@ -10,7 +10,14 @@
            <th width="250">库存</th>
            <th width="200">操作</th>
         </tr>
+        <notempty name="gnData">
         <volist name="gnData" id="gn">
+            <?php
+                if($key==0)
+                    $opt='+';
+                else
+                    $opt='-';
+            ?>
         <tr>
             <volist name="attr" id="vo">
                 <td>
@@ -29,9 +36,31 @@
                 </td>
             </volist>
             <td><input type="text" name="goods_num[]" value="{$gn.goods_number}"/></td>
-            <td><input onclick="addnew(this)" type="button" value="+"/></td>
+            <td><input onclick="addnew(this)" type="button" value="{$opt}"/></td>
         </tr>
         </volist>
+        <else/>
+            <tr>
+                <volist name="attr" id="vo">
+                    <td>
+                        <select name='goods_attr_id[]'>
+                            <option value="">请选择</option>
+                            <volist name="vo" id="vo1">
+                                <?php
+                            if(strpos(','.$gn['goods_attr_id'].',',','.$vo1['id'].',')!==false)
+                                $select = 'selected = "selected"';
+                            else
+                                $select = '';
+                         ?>
+                                <option value="{$vo1.id}" {$select}>{$vo1.attr_value}</option>
+                            </volist>
+                        </select>
+                    </td>
+                </volist>
+                <td><input type="text" name="goods_num[]" value="{$gn.goods_number}"/></td>
+                <td><input onclick="addnew(this)" type="button" value="{$opt}"/></td>
+            </tr>
+        </notempty>
         <tr class="inputbut">
             <td colspan="<?php echo count($attr)+2;?>" align="center">
                 <input type="submit" value="提交"/>

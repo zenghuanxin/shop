@@ -79,7 +79,7 @@ class GoodsModel extends Model
 		$page->setConfig('next', '下一页');
 		$data['page'] = $page->show();
 		/************************************** 取数据 ******************************************/
-		$data['data'] = $this->alias('a')->where($where)->group('a.id')->limit($page->firstRow.','.$page->listRows)->select();
+		$data['data'] = $this->field('a.*,SUM(b.goods_number) num')->alias('a')->join('LEFT JOIN shop_goods_number b on a.id = b.goods_id')->where($where)->group('a.id')->limit($page->firstRow.','.$page->listRows)->select();
 		return $data;
 	}
 	// 添加前
@@ -366,4 +366,42 @@ class GoodsModel extends Model
 		deleteImage($images);
 	}
 	/************************************ 其他方法 ********************************************/
+	//获取促销商品
+	public function getCrazyGoods($limit = 5 ){
+	    $map = array();
+	    $map['is_on_sale'] = 1;
+	    $map['is_delete'] = 0;
+	    $map['is_promote'] = 1;
+	    $map['promote_start_time'] = array('elt',time());
+	    $map['promote_end_time'] = array('egt',time());
+	    $crazygoods = $this->where($map)->order('sort_num ASC')->select();
+	    return $crazygoods;
+    }
+    //获取热卖商品
+    public function getHotGoods($limit = 5){
+        $map = array();
+        $map['is_on_sale'] = 1;
+        $map['is_delete'] = 0;
+        $map['is_hot'] = 1;
+        $crazygoods = $this->where($map)->order('sort_num ASC')->select();
+        return $crazygoods;
+    }
+    //获取精品推荐
+    public function getBestGoods($limit = 5){
+        $map = array();
+        $map['is_on_sale'] = 1;
+        $map['is_delete'] = 0;
+        $map['is_best'] = 1;
+        $crazygoods = $this->where($map)->order('sort_num ASC')->select();
+        return $crazygoods;
+    }
+    //获取最新商品
+    public function getNewGoods($limit = 5){
+        $map = array();
+        $map['is_on_sale'] = 1;
+        $map['is_delete'] = 0;
+        $map['is_new'] = 1;
+        $crazygoods = $this->where($map)->order('sort_num ASC')->select();
+        return $crazygoods;
+    }
 }

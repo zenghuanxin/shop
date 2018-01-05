@@ -250,7 +250,7 @@ class GoodsController extends IndexController
         $gnModel = M('GoodsNumber');
         $gnData = $gnModel->where(array('goods_id'=>$goodsId))->select();
         $this->assign('gnData',$gnData);
-        dump($gnData);
+
 
         $this->setPageBtn('库存设置', '商品列表', U('lst?p='.I('get.p')));
         $this->display();
