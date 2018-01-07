@@ -361,9 +361,8 @@ class PHPMailer {
    * @return void
    */
   public function IsSMTP() {
-    $this->Mailer = 'smtp';
+    $this->Mailer = 'SMTP';
   }
-
   /**
    * Sets Mailer to send message using PHP mail() function.
    * @return void
@@ -572,7 +571,7 @@ class PHPMailer {
       switch($this->Mailer) {
         case 'sendmail':
           return $this->SendmailSend($header, $body);
-        case 'smtp':
+        case 'SMTP':
           return $this->SmtpSend($header, $body);
         default:
           return $this->MailSend($header, $body);

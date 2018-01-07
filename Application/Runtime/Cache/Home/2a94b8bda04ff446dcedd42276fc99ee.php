@@ -28,7 +28,7 @@
 			</div>
 			<div class="topnav_right fr">
 				<ul>
-					<li>您好，欢迎来到京西！[<a href="login.html">登录</a>] [<a href="register.html">免费注册</a>] </li>
+					<li id="logInfo">您好，欢迎来到京西！[<a href='<?php echo U('Home/Member/login'); ?>'>登录</a>] [<a href='<?php echo U('Home/Member/regist'); ?>'>免费注册</a>]</li>
 					<li class="line">|</li>
 					<li>我的订单</li>
 					<li class="line">|</li>
@@ -726,6 +726,19 @@
 		</div>
 	</div>
 	<!-- 底部导航 end -->
+<script>
+    $.ajax({
+        type:'get',
+        url:'<?php echo U(Home/member/ajaxGetLogin);?>',
+        success:function (data) {
+            if(data.ok==1){
+                var html = '<li id="logInfo">您好，{data.email}欢迎来到京西！[<a href="<?php echo U('Home/Member/login'); ?>">登录</a>] ';
+            }
+            $('#logInfo').html(html);
+        }
+    });
+
+</script>
 	
 	<!-- 底部导航 end -->
 	<div style="clear:both;"></div>
@@ -758,3 +771,21 @@
 
 </body>
 </html>
+<script>
+	$.ajax({
+		type:'get',
+		url:"<?php echo U('Home/Member/ajaxGetLogin');?>",
+		dataType:'json',
+		success:function (data) {
+		    var html = '';
+			if(data.ok==1){
+				html = "您好，"+data.email+"欢迎来到京西！[<a href='<?php echo U('Home/Member/logout'); ?>'>退出</a>]";
+			}
+			else {
+                html= "您好，欢迎来到京西！[<a href='<?php echo U('Home/Member/login'); ?>'>登录</a>] [<a href='<?php echo U('Home/Member/regist'); ?>'>免费注册</a>]";
+			}
+			$('#logInfo').html(html);
+        }
+	});
+
+</script>

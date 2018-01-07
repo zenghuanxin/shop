@@ -24,8 +24,9 @@ return array(
 
     /************** 发邮件的配置 ***************/
     'MAIL_ADDRESS' => '18659328891@163.com',   // 发货人的email
-    'MAIL_FROM' => '18659328891',      // 发货人姓名
+    'MAIL_FROM' => '曾焕新',      // 发货人姓名
     'MAIL_SMTP' => 'smtp.163.com',      // 邮件服务器的地址
-    'MAIL_LOGINNAME' => '18659328891',
-    'MAIL_PASSWORD' => 'zhx413247939',
+    'MAIL_LOGINNAME' => '18659328891@163.com',
+    'MAIL_PASSWORD' => 'zhx509509',//163邮箱用的授权码
+
 );

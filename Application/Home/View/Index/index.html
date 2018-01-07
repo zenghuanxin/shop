@@ -494,3 +494,16 @@
 
 <div style="clear:both;"></div>
 <include file="Layout/footer" />
+<script>
+    $.ajax({
+        type:'get',
+        url:'{:U(Home/member/ajaxGetLogin)}',
+        success:function (data) {
+            if(data.ok==1){
+                var html = '<li id="logInfo">您好，{data.email}欢迎来到京西！[<a href="<?php echo U('Home/Member/login'); ?>">登录</a>] ';
+            }
+            $('#logInfo').html(html);
+        }
+    });
+
+</script>

@@ -11,6 +11,7 @@
 function sendMail($to, $title, $content)
 {
     require_once('./PHPMailer_v5.1/class.phpmailer.php');
+    require_once('./PHPMailer_v5.1/class.smtp.php');
     $mail = new PHPMailer();
     // 设置为要发邮件
     $mail->IsSMTP();
@@ -33,9 +34,6 @@ function sendMail($to, $title, $content)
     $mail->Subject=$title;
     // 邮件内容
     $mail->Body=$content;
-    if ($mail->ErrorInfo()){
-        dump($mail->ErrorInfo());
-    }
     return($mail->Send());
 }
 function removeXSS($val){

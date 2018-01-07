@@ -52,9 +52,9 @@
 <!-- 页面头部 end -->
 
 <!-- 登录主体部分start -->
-<div class="login w990 bc mt10 regist">
+<div class="login w990 bc mt10">
     <div class="login_hd">
-        <h2>用户注册</h2>
+        <h2>用户登录</h2>
         <b></b>
     </div>
     <div class="login_bd">
@@ -62,19 +62,13 @@
             <form action="" method="post">
                 <ul>
                     <li>
-                        <label for="">邮箱：</label>
+                        <label for="">用户名：</label>
                         <input type="text" class="txt" name="email" />
-                        <p>请输入正确的邮箱地址</p>
                     </li>
                     <li>
                         <label for="">密码：</label>
                         <input type="password" class="txt" name="password" />
-                        <p>6-20位字符，可使用字母、数字和符号的组合，不建议使用纯数字、纯字母、纯符号</p>
-                    </li>
-                    <li>
-                        <label for="">确认密码：</label>
-                        <input type="password" class="txt" name="cpassword" />
-                        <p> <span>请再次输入密码</p>
+                        <a href="">忘记密码?</a>
                     </li>
                     <li class="checkcode" style="height: 18px">
                         <label for="">验证码：</label>
@@ -84,22 +78,30 @@
                     </li>
                     <li>
                         <label for="">&nbsp;</label>
-                        <input type="checkbox" class="chb" checked="checked" name="mustsbm" /> 我已阅读并同意《用户注册协议》
-                    </li>
-                    <li>
-                        <label for="">&nbsp;</label>
                         <input type="submit" value="" class="login_btn" />
                     </li>
                 </ul>
             </form>
 
-
+            <div class="coagent mt15">
+                <dl>
+                    <dt>使用合作网站登录商城：</dt>
+                    <dd class="qq"><a href=""><span></span>QQ</a></dd>
+                    <dd class="weibo"><a href=""><span></span>新浪微博</a></dd>
+                    <dd class="yi"><a href=""><span></span>网易</a></dd>
+                    <dd class="renren"><a href=""><span></span>人人</a></dd>
+                    <dd class="qihu"><a href=""><span></span>奇虎360</a></dd>
+                    <dd class=""><a href=""><span></span>百度</a></dd>
+                    <dd class="douban"><a href=""><span></span>豆瓣</a></dd>
+                </dl>
+            </div>
         </div>
 
-        <div class="mobile fl">
-            <h3>手机快速注册</h3>
-            <p>中国大陆手机用户，编辑短信 “<strong>XX</strong>”发送到：</p>
-            <p><strong>1069099988</strong></p>
+        <div class="guide fl">
+            <h3>还不是商城用户</h3>
+            <p>现在免费注册成为商城用户，便能立刻享受便宜又放心的购物乐趣，心动不如行动，赶紧加入吧!</p>
+
+            <a href="regist.html" class="reg_btn">免费注册 >></a>
         </div>
 
     </div>
@@ -137,3 +139,21 @@
 
 </body>
 </html>
+<script>
+	$.ajax({
+		type:'get',
+		url:"<?php echo U('Home/Member/ajaxGetLogin');?>",
+		dataType:'json',
+		success:function (data) {
+		    var html = '';
+			if(data.ok==1){
+				html = "您好，"+data.email+"欢迎来到京西！[<a href='<?php echo U('Home/Member/logout'); ?>'>退出</a>]";
+			}
+			else {
+                html= "您好，欢迎来到京西！[<a href='<?php echo U('Home/Member/login'); ?>'>登录</a>] [<a href='<?php echo U('Home/Member/regist'); ?>'>免费注册</a>]";
+			}
+			$('#logInfo').html(html);
+        }
+	});
+
+</script>

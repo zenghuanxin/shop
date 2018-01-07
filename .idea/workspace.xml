@@ -2,268 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01904b38-c087-4406-85ea-09f575264ab0" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/examples/images/phpmailer.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/examples/images/phpmailer_mini.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/test/test.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/20120209D.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/20130415i.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/acer.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/acer4739.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/ad.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/arrow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/beian.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/bg1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/bg2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/bg_hotsale.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/bg_icons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/bg_tit_home.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/bg_xiala.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/btn_check.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/btn_continue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/btn_fillin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/canon.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/cart_001.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/cart_goods1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/cart_goods2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/cart_goods3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/checkcode1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/checkcode2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/crazy1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/crazy2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/crazy3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/crazy4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/crazy5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/dell.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/desc1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/desc2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/desc3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/desc4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/desc5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/desc6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/desc7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/desc8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/desc9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/dlink.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/flow_bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/flow_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/fujitsu.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/goods1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/goods2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/goods3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/goods4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/goods5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/goods6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/guess1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/guess2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/guess3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/holiday.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/hot1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/hot2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/hot3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/hp.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/hpG4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/icon_cologin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/icon_promotion.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/index_slide1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/index_slide2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/index_slide3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/index_slide4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/index_slide5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/index_slide6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/intel.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/jdleft.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/kexin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/lenove.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/lh531.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/list_hot1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/list_hot2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/list_hot3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/login_ad.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/login_img.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/login_word.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/lottery.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/new1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/new2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/new3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/newicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/newicon1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/newicon201301028.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/notebook.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/one4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/one5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/order1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/order2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/order3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/order_btn.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/order_disabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/p-btns.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/police.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/preview_l1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/preview_l2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/preview_l3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/preview_l4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/preview_l5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/preview_l6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/preview_l7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/preview_l8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/preview_l9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/preview_m1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/preview_m2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/preview_m3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/preview_m4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/preview_m5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/preview_m6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/preview_m7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/preview_m8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/preview_m9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/preview_s1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/preview_s2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/preview_s3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/preview_s4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/preview_s5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/preview_s6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/preview_s7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/preview_s8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/preview_s9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/qinghuax2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/recommend1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/recommend2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/recommend3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/reg_mobile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/regist_img.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/relate_view1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/relate_view2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/relate_view3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/relate_view4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/relate_view5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/samsung.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/samsung.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/samsung6800.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/sanguo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/scenic.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/seagate.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/sort_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/taohua.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/tb_th.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/thinkpad e420.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/tit_regist.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/user1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/user2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/user3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/view_list1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/view_list2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/view_list3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/viewsonic.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/wulin.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/images/xin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Model/MemberModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/Conf/config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/Controller/BaseController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/Controller/MemberController.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Index/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Layout/footer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Layout/header.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Layout/layout.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Member/regist.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/README" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/aboutus.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/changelog.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/class.phpmailer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/class.pop3.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/class.smtp.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/docs/Callback_function_notes.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/docs/DomainKeys_notes.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/docs/Note_for_SMTP_debugging.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/docs/extending.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/docs/faq.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/docs/pop3_article.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/docs/use_gmail.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/examples/contents.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/examples/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/examples/test_db_smtp_basic.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/examples/test_mail_advanced.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/examples/test_mail_basic.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/examples/test_pop_before_smtp_advanced.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/examples/test_pop_before_smtp_basic.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/examples/test_sendmail_advanced.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/examples/test_sendmail_basic.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/examples/test_smtp_advanced.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/examples/test_smtp_advanced_no_auth.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/examples/test_smtp_basic.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/examples/test_smtp_basic_no_auth.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/examples/test_smtp_gmail_advanced.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/examples/test_smtp_gmail_basic.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/language/phpmailer.lang-ar.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/language/phpmailer.lang-br.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/language/phpmailer.lang-ca.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/language/phpmailer.lang-ch.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/language/phpmailer.lang-cz.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/language/phpmailer.lang-de.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/language/phpmailer.lang-dk.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/language/phpmailer.lang-es.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/language/phpmailer.lang-et.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/language/phpmailer.lang-fi.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/language/phpmailer.lang-fo.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/language/phpmailer.lang-fr.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/language/phpmailer.lang-hu.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/language/phpmailer.lang-it.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/language/phpmailer.lang-ja.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/language/phpmailer.lang-nl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/language/phpmailer.lang-no.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/language/phpmailer.lang-pl.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/language/phpmailer.lang-ro.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/language/phpmailer.lang-ru.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/language/phpmailer.lang-se.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/language/phpmailer.lang-tr.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/language/phpmailer.lang-zh.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/language/phpmailer.lang-zh_cn.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/test/contents.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/test/phpmailerTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/test/test_callback.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/test/testemail.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/js/cart1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/js/cart2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/js/goods.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/js/header.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/js/home.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/js/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/js/jquery-1.8.3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/js/jqzoom-core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/js/list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/style/address.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/style/base.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/style/bottomnav.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/style/cart.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/style/common.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/style/fillin.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/style/footer.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/style/global.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/style/goods.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/style/header.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/style/home.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/style/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/style/jqzoom.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/style/list.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/style/login.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/style/order.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/style/success.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/style/user.css" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Home/Controller/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Home/View/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Home/index.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Member/login.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Application/Html/index.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/GoodsController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/GoodsController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Model/CategoryModel.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Model/CategoryModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Model/GoodsModel.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Model/GoodsModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Goods/goodsNum.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Goods/goodsNum.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Goods/lst.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Goods/lst.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Model/MemberModel.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Model/MemberModel.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Common/Common/function.php" afterPath="$PROJECT_DIR$/Application/Common/Common/function.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Common/Conf/config.php" afterPath="$PROJECT_DIR$/Application/Common/Conf/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php_errors.log" afterPath="$PROJECT_DIR$/php_errors.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/MemberController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/MemberController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Index/index.html" afterPath="$PROJECT_DIR$/Application/Home/View/Index/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Layout/layout.html" afterPath="$PROJECT_DIR$/Application/Home/View/Layout/layout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Home/bed6fef3a3ea89371ed867920e9e6a8c.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Home/bed6fef3a3ea89371ed867920e9e6a8c.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHPMailer_v5.1/class.phpmailer.php" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/class.phpmailer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PHPMailer_v5.1/class.smtp.php" afterPath="$PROJECT_DIR$/PHPMailer_v5.1/class.smtp.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -272,47 +23,54 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="MemberController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Home/Controller/MemberController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="33" column="28" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="28" />
+            <state relative-caret-position="166">
+              <caret line="55" column="10" lean-forward="false" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Application/Common/Conf/config.php">
+      <file leaf-file-name="layout.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Home/View/Layout/layout.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="26" column="34" lean-forward="false" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+            <state relative-caret-position="355">
+              <caret line="88" column="74" lean-forward="false" selection-start-line="88" selection-start-column="69" selection-end-line="88" selection-end-column="74" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-        <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150430/www.34.com.代码/Application/Common/Conf/config.php">
+      <file leaf-file-name="MemberModel.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Application/Admin/Model/MemberModel.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="26" column="35" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="26" selection-end-column="35" />
+            <state relative-caret-position="328">
+              <caret line="63" column="52" lean-forward="false" selection-start-line="63" selection-start-column="52" selection-end-line="63" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="function.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Application/Home/Conf/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="function.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Common/Common/function.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-              <folding>
-                <element signature="e#6#99#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="-8">
+              <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -349,6 +107,14 @@
       <find>src=&quot;__PUBLIC__/</find>
       <find>imagesimages</find>
       <find>images/</find>
+      <find>fsockopen</find>
+      <find>IsSMTP</find>
+      <find>sm</find>
+      <find>switch($this-&gt;Mailer)</find>
+      <find>smtp</find>
+      <find>IsSM</find>
+      <find>socket</find>
+      <find>switch</find>
     </findStrings>
     <replaceStrings>
       <replace>href=&quot;__PUBLIC__/style</replace>
@@ -364,10 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Application/Admin/Controller/testController.class.php" />
-        <option value="$USER_HOME$/AppData/Local/Temp/Rar$EXa0.288/three/index.html" />
-        <option value="$PROJECT_DIR$/Application/Admin/Controller/TestController.class.php" />
-        <option value="E:/BaiduNetdiskDownload/最新PHP视频教程全套素材、笔记文档（完整版）(更多内容请关注xinsz08)/PHP 素材/8、jquery/20150401/代码/three/index.html" />
         <option value="$PROJECT_DIR$/Application/Admin/View/Test/index.html" />
         <option value="$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php" />
         <option value="$PROJECT_DIR$/Application/Gii/Controller/IndexController.class.php" />
@@ -406,15 +168,19 @@
         <option value="$PROJECT_DIR$/Application/Admin/Model/GoodsModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" />
         <option value="E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150420/模板/前台/index.html" />
-        <option value="$PROJECT_DIR$/Application/Home/View/Index/index.html" />
-        <option value="$PROJECT_DIR$/Application/Home/Conf/config.php" />
         <option value="$PROJECT_DIR$/Application/Home/Model/MemberModel.class.php" />
         <option value="E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150430/www.34.com.代码/Application/Admin/Model/MemberModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/View/Member/regist.html" />
+        <option value="$PROJECT_DIR$/PHPMailer_v5.1/class.smtp.php" />
+        <option value="$PROJECT_DIR$/Application/Common/Common/function.php" />
+        <option value="$PROJECT_DIR$/PHPMailer_v5.1/class.phpmailer.php" />
+        <option value="$PROJECT_DIR$/Application/Common/Conf/config.php" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Index/index.html" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Member/login.html" />
         <option value="$PROJECT_DIR$/Application/Admin/Model/MemberModel.class.php" />
         <option value="$PROJECT_DIR$/Application/Home/Controller/MemberController.class.php" />
-        <option value="$PROJECT_DIR$/Application/Common/Conf/config.php" />
-        <option value="$PROJECT_DIR$/Application/Common/Common/function.php" />
+        <option value="$PROJECT_DIR$/Application/Home/View/Layout/layout.html" />
+        <option value="$PROJECT_DIR$/Application/Home/Conf/config.php" />
       </list>
     </option>
   </component>
@@ -427,8 +193,8 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-4" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1386" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="添加" />
@@ -452,102 +218,24 @@
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PHPMailer_v5.1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Common" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Common" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Conf" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shop" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Html" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
     </panes>
@@ -558,19 +246,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\phpStudy\WWW\shop" />
-      <recent name="D:\phpStudy\WWW\shop\Application" />
-      <recent name="D:\phpStudy\WWW\shop\Application\Home\Controller" />
-      <recent name="D:\phpStudy\WWW\shop\Application\Home\View\Index" />
-      <recent name="D:\phpStudy\WWW\shop\Application\Home\View\Layout" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\phpStudy\WWW\shop\Application\Admin\Model" />
       <recent name="D:\phpStudy\WWW\shop\ThinkPHP\Library\Org" />
       <recent name="D:\phpStudy\WWW\shop\Application" />
       <recent name="D:\phpStudy\WWW\shop\Public" />
       <recent name="D:\phpStudy\WWW\shop\Application\Gii\Controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\phpStudy\WWW\shop\Application\Home\View\Member" />
+      <recent name="D:\phpStudy\WWW\shop" />
+      <recent name="D:\phpStudy\WWW\shop\Application" />
+      <recent name="D:\phpStudy\WWW\shop\Application\Home\Controller" />
+      <recent name="D:\phpStudy\WWW\shop\Application\Home\View\Index" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -586,6 +274,14 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
     <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
       <PhpTestRunnerSettings />
       <method />
@@ -622,15 +318,6 @@
     </configuration>
     <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
       <PhpTestRunnerSettings />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -684,17 +371,17 @@
       <workItem from="1514509953940" duration="7244000" />
       <workItem from="1514530703110" duration="59661000" />
       <workItem from="1515138767460" duration="6643000" />
+      <workItem from="1515208425303" duration="16168000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="258739000" />
+    <option name="totallyTimeSpent" value="274907000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="0" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
+    <frame x="-4" y="0" width="1386" height="788" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14635417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1459854" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
@@ -704,6 +391,7 @@
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -714,11 +402,10 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -733,99 +420,8 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150426/www.34.com.代码/Application/Admin/View/Goods/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1825">
-          <caret line="50" column="42" lean-forward="false" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_8.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="552" column="9" lean-forward="false" selection-start-line="552" selection-start-column="9" selection-end-line="552" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150426/www.34.com.代码/Application/Admin/Model/GoodsModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1150">
-          <caret line="38" column="53" lean-forward="true" selection-start-line="37" selection-start-column="8" selection-end-line="38" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150426/www.34.com.代码/Application/Admin/Controller/GoodsController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-651">
-          <caret line="161" column="71" lean-forward="true" selection-start-line="161" selection-start-column="8" selection-end-line="161" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150426/www.34.com.代码/Application/Common/Common/function.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="120" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Goods/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="276" column="20" lean-forward="true" selection-start-line="276" selection-start-column="20" selection-end-line="276" selection-end-column="20" />
-          <folding>
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#2;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#4;n#form#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Goods/recycleLst.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="563">
-          <caret line="88" column="17" lean-forward="true" selection-start-line="88" selection-start-column="17" selection-end-line="88" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/Tencent Files/365962818/FileRecv/PHP视频资料.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$EXa0.838/www.34.com.代码/Application/Admin/View/Goods/goods_number.html" />
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$EXa0.720/www.34.com.代码/Application/Admin/View/Goods/lst.html" />
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Goods/lst.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="70" column="24" lean-forward="true" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/View/Goods/goodsNum.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="57" column="25" lean-forward="true" selection-start-line="57" selection-start-column="25" selection-end-line="57" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150420/模板/前台/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150420/模板/前台/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150420/模板/前台/footer.html" />
+    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150420/模板/前台/header.html" />
     <entry file="file://$PROJECT_DIR$/Public/Home/js/home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -837,11 +433,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="549">
           <caret line="143" column="36" lean-forward="false" selection-start-line="143" selection-start-column="36" selection-end-line="143" selection-end-column="36" />
-          <folding>
-            <marker date="1515028628049" expanded="true" signature="7130:7405" ph="select a.*,b... shop_goods_attr" />
-            <marker date="1515028628049" expanded="true" signature="7130:7415" ph="select a.*,b... shop_goods_attr" />
-            <marker date="1515028628049" expanded="true" signature="7290:7388" ph="select attr_... shop_goods_attr" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -854,38 +445,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Home/View/Layout/topnav.html" />
     <entry file="file://$PROJECT_DIR$/Application/Home/View/Layout/bottomnav.html" />
-    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150427/www.34.com.代码/Application/Home/View/Index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150427/www.34.com.代码/Application/Home/View/Layout/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8487">
-          <caret line="14" column="16" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150427/www.34.com.代码/Application/Home/View/Layout/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12">
-          <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150427/www.34.com.代码/Application/Home/View/Index/index.html" />
+    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150427/www.34.com.代码/Application/Home/View/Layout/header.html" />
+    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150427/www.34.com.代码/Application/Home/View/Layout/layout.html" />
     <entry file="file://$PROJECT_DIR$/Application/Admin/Model/CategoryModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="838">
           <caret line="79" column="9" lean-forward="true" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/Layout/footer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="772">
-          <caret line="63" column="21" lean-forward="true" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -896,61 +462,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/Layout/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="43" column="15" lean-forward="true" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150420/模板/前台/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="1131" column="22" lean-forward="true" selection-start-line="1117" selection-start-column="16" selection-end-line="1131" selection-end-column="22" />
-          <folding>
-            <element signature="e#26466#26472#0" expanded="true" />
-            <element signature="e#27986#27992#1" expanded="true" />
-            <element signature="n#style#0;n#div#10;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#12;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#38740#38746#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150420/模板/前台/index.html" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.496/config.php" />
-    <entry file="file://$PROJECT_DIR$/Application/Html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3575">
-          <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.626/config.php" />
-    <entry file="file://$PROJECT_DIR$/Application/Home/Conf/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="2" lean-forward="false" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
-          <folding>
-            <element signature="e#6#98#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="203" column="29" lean-forward="false" selection-start-line="203" selection-start-column="29" selection-end-line="203" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150430/www.34.com.代码/db.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="266" column="0" lean-forward="true" selection-start-line="266" selection-start-column="0" selection-end-line="266" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150430/www.34.com.代码/db.sql" />
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/BaseController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -959,54 +474,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150420/模板/前台/regist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="95" column="22" lean-forward="true" selection-start-line="34" selection-start-column="4" selection-end-line="95" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150430/www.34.com.代码/Application/Home/Conf/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/PHPMailer_v5.1/docs/faq.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150430/www.34.com.代码/Application/Common/Common/function.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="27" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PHPMailer_v5.1/docs/faq.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-937">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150430/www.34.com.代码/Application/Home/View/Member/regist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="23" column="82" lean-forward="true" selection-start-line="23" selection-start-column="82" selection-end-line="23" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150420/模板/前台/regist.html" />
+    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150430/www.34.com.代码/Application/Home/Conf/config.php" />
+    <entry file="file://$PROJECT_DIR$/Application/PHPMailer_v5.1/docs/faq.html" />
+    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150430/www.34.com.代码/Application/Common/Common/function.php" />
+    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150430/www.34.com.代码/Application/Home/View/Member/regist.html" />
     <entry file="file://$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
@@ -1015,48 +487,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Admin/Model/MemberModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150430/www.34.com.代码/Application/Home/Controller/MemberController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/View/Member/regist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="41" column="52" lean-forward="true" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
-          <folding>
-            <element signature="n#style#0;n#li#3;n#ul#0;n#form#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150430/www.34.com.代码/Application/Home/Controller/MemberController.class.php" />
     <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/LoginController.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
           <caret line="32" column="5" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="32" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150430/www.34.com.代码/Application/Admin/Model/MemberModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="41" column="5" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="41" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150430/www.34.com.代码/Application/Admin/Model/MemberModel.class.php" />
     <entry file="file://$PROJECT_DIR$/Application/Admin/Model/GoodsModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -1065,37 +504,192 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/MemberController.class.php">
+    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150430/www.34.com.代码/Application/Common/Conf/config.php" />
+    <entry file="file://$PROJECT_DIR$/PHPMailer_v5.1/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="33" column="28" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="28" />
+        <state relative-caret-position="-5102">
+          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Application/Common/Conf/config.php">
+    <entry file="file://$PROJECT_DIR$/PHPMailer_v5.1/docs/faq.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="26" column="34" lean-forward="false" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/BaiduNetdiskDownload/PHP 素材/14、电子商城项目/20150430/www.34.com.代码/Application/Common/Conf/config.php">
+    <entry file="file://F:/python/14、电子商城项目/20150430/www.34.com.代码/Application/Admin/Model/MemberModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="26" column="35" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="26" selection-end-column="35" />
+        <state relative-caret-position="351">
+          <caret line="52" column="5" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="52" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/python/14、电子商城项目/20150430/www.34.com.代码/Application/Common/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="26" column="35" lean-forward="true" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/python/14、电子商城项目/20150430/www.34.com.代码/Application/Common/Common/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHPMailer_v5.1/class.smtp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5958">
+          <caret line="150" column="35" lean-forward="true" selection-start-line="150" selection-start-column="35" selection-end-line="150" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHPMailer_v5.1/class.phpmailer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1332">
+          <caret line="573" column="18" lean-forward="false" selection-start-line="573" selection-start-column="14" selection-end-line="573" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Model/MemberLevelModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-135">
+          <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/python/14、电子商城项目/20150430/www.34.com.代码/db.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="267" column="34" lean-forward="true" selection-start-line="267" selection-start-column="34" selection-end-line="267" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Member/regist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="39" column="25" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="39" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#li#3;n#ul#0;n#form#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/python/14、电子商城项目/20150420/模板/前台/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2322">
+          <caret line="20" column="104" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Layout/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1701">
+          <caret line="63" column="21" lean-forward="true" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="496" column="8" lean-forward="true" selection-start-line="496" selection-start-column="8" selection-end-line="496" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Member/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="35" column="52" lean-forward="true" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#li#2;n#ul#0;n#form#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-432">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Common/Common/function.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-          <folding>
-            <element signature="e#6#99#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="-8">
+          <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/python/14、电子商城项目/20150430/www.34.com.代码/Application/Home/View/Layout/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="82" column="20" lean-forward="false" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/python/14、电子商城项目/20150430/www.34.com.代码/Application/Home/Controller/MemberController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="69" column="22" lean-forward="true" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Controller/MemberController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="55" column="10" lean-forward="false" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/View/Layout/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="88" column="74" lean-forward="false" selection-start-line="88" selection-start-column="69" selection-end-line="88" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Common/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="22" column="12" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Admin/Model/MemberModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="63" column="52" lean-forward="false" selection-start-line="63" selection-start-column="52" selection-end-line="63" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Application/Home/Conf/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>

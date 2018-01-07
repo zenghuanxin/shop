@@ -24,7 +24,7 @@
 			</div>
 			<div class="topnav_right fr">
 				<ul>
-					<li>您好，欢迎来到京西！[<a href="login.html">登录</a>] [<a href="register.html">免费注册</a>] </li>
+					<li id="logInfo">您好，欢迎来到京西！[<a href='/index.php/Home/Member/login.html'>登录</a>] [<a href='/index.php/Home/Member/regist.html'>免费注册</a>]</li>
 					<li class="line">|</li>
 					<li>我的订单</li>
 					<li class="line">|</li>
@@ -352,52 +352,28 @@
             <!-- 疯狂抢购 start-->
             <div class="crazy">
                 <ul>
-                    <li>
-                            <dl>
-                                <dt><a href=""><img src='/Public/Uploads/Admin/2018-01-03/thumb_0_5a4c4a861a214.png'   /></a></dt>
-                                <dd><a href="">iPhoneX</a></dd>
-                                <dd><span>售价：</span><strong> ￥8000.00元</strong></dd>
-                            </dl>
-                        </li>                </ul>
+                                    </ul>
             </div>
             <!-- 疯狂抢购 end-->
 
             <!-- 热卖商品 start -->
             <div class="hot none">
                 <ul>
-                    <li>
-                            <dl>
-                                <dt><a href=""><img src='/Public/Uploads/Admin/2018-01-04/thumb_0_5a4e00633c274.png'   /></a></dt>
-                                <dd><a href="">商品1</a></dd>
-                                <dd><span>售价：</span><strong> ￥888.00元</strong></dd>
-                            </dl>
-                        </li>                </ul>
+                                    </ul>
             </div>
             <!-- 热卖商品 end -->
 
             <!-- 推荐商品 atart -->
             <div class="recommend none">
                 <ul>
-                    <li>
-                            <dl>
-                                <dt><a href=""><img src='/Public/Uploads/Admin/2018-01-04/thumb_0_5a4e00cc3f15b.png'   /></a></dt>
-                                <dd><a href="">推荐商品</a></dd>
-                                <dd><span>售价：</span><strong> ￥999.00元</strong></dd>
-                            </dl>
-                        </li>                </ul>
+                                    </ul>
             </div>
             <!-- 推荐商品 end -->
 
             <!-- 新品上架 start-->
             <div class="new none">
                 <ul>
-                    <li>
-                            <dl>
-                                <dt><a href=""><img src='/Public/Uploads/'   /></a></dt>
-                                <dd><a href="">新品</a></dd>
-                                <dd><span>售价：</span><strong> ￥777.00元</strong></dd>
-                            </dl>
-                        </li>                </ul>
+                                    </ul>
             </div>
             <!-- 新品上架 end-->
 
@@ -752,6 +728,19 @@
 		</div>
 	</div>
 	<!-- 底部导航 end -->
+<script>
+    $.ajax({
+        type:'get',
+        url:'/index.php/Home/Index/index.html',
+        success:function (data) {
+            if(data.ok==1){
+                var html = '<li id="logInfo">您好，{data.email}欢迎来到京西！[<a href="/index.php/Home/Member/login.html">登录</a>] ';
+            }
+            $('#logInfo').html(html);
+        }
+    });
+
+</script>
 	
 	<!-- 底部导航 end -->
 	<div style="clear:both;"></div>
@@ -784,3 +773,21 @@
 
 </body>
 </html>
+<script>
+	$.ajax({
+		type:'get',
+		url:"/index.php/Home/Member/ajaxGetLogin.html",
+		dataType:'json',
+		success:function (data) {
+		    var html = '';
+			if(data.ok==1){
+				html = "您好，"+data.email+"欢迎来到京西！[<a href='/index.php/Home/Member/logout.html'>退出</a>]";
+			}
+			else {
+                html= "您好，欢迎来到京西！[<a href='/index.php/Home/Member/login.html'>登录</a>] [<a href='/index.php/Home/Member/regist.html'>免费注册</a>]";
+			}
+			$('#logInfo').html(html);
+        }
+	});
+
+</script>
