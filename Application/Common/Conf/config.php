@@ -15,6 +15,7 @@ return array(
     'IMG_maxSize'           =>  '3M',
     'IMG_exts'              => array('jpg','pjpeg','bmp','gif','png','jpeg'),
     'IMG_rootPath'          => './Public/Uploads/',
+    'IMG_URL'          => '/Public/Uploads/',
     /***********修改I函数底层过滤时使用的函数***********/
     /*默认使用htmlspecialchars*/
     'DEFAULT_FILTER'        => 'trim,removeXSS',

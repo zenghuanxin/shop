@@ -148,8 +148,8 @@
                     <volist name="crazygoods" id="vo">
                         <li>
                             <dl>
-                                <dt><a href=""><?php showImage($vo['sm_logo'])?></a></dt>
-                                <dd><a href="">{$vo.goods_name}</a></dd>
+                                <dt><a href="{:U('Home/Index/goods',array('goods_id'=>$vo['id']),false)}"><?php showImage($vo['sm_logo'])?></a></dt>
+                                <dd><a href="{:U('Home/Index/goods',array('goods_id'=>$vo['id']),false)}">{$vo.goods_name}</a></dd>
                                 <dd><span>售价：</span><strong> ￥{$vo.promote_price}元</strong></dd>
                             </dl>
                         </li>
@@ -164,8 +164,8 @@
                     <volist name="hotgoods" id="vo">
                         <li>
                             <dl>
-                                <dt><a href=""><?php showImage($vo['sm_logo'])?></a></dt>
-                                <dd><a href="">{$vo.goods_name}</a></dd>
+                                <dt><a href="{:U('Home/Index/goods',array('goods_id'=>$vo['id']),false)}"><?php showImage($vo['sm_logo'])?></a></dt>
+                                <dd><a href="{:U('Home/Index/goods',array('goods_id'=>$vo['id']),false)}">{$vo.goods_name}</a></dd>
                                 <dd><span>售价：</span><strong> ￥{$vo.shop_price}元</strong></dd>
                             </dl>
                         </li>
@@ -180,8 +180,8 @@
                     <volist name="bestgoods" id="vo">
                         <li>
                             <dl>
-                                <dt><a href=""><?php showImage($vo['sm_logo'])?></a></dt>
-                                <dd><a href="">{$vo.goods_name}</a></dd>
+                                <dt><a href="{:U('Home/Index/goods',array('goods_id'=>$vo['id']),false)}"><?php showImage($vo['sm_logo'])?></a></dt>
+                                <dd><a href="{:U('Home/Index/goods',array('goods_id'=>$vo['id']),false)}">{$vo.goods_name}</a></dd>
                                 <dd><span>售价：</span><strong> ￥{$vo.shop_price}元</strong></dd>
                             </dl>
                         </li>
@@ -196,8 +196,8 @@
                     <volist name="newgoods" id="vo">
                         <li>
                             <dl>
-                                <dt><a href=""><?php showImage($vo['sm_logo'])?></a></dt>
-                                <dd><a href="">{$vo.goods_name}</a></dd>
+                                <dt><a href="{:U('Home/Index/goods',array('goods_id'=>$vo['id']),false)}"><?php showImage($vo['sm_logo'])?></a></dt>
+                                <dd><a href="{:U('Home/Index/goods',array('goods_id'=>$vo['id']),false)}">{$vo.goods_name}</a></dd>
                                 <dd><span>售价：</span><strong> ￥{$vo.shop_price}元</strong></dd>
                             </dl>
                         </li>

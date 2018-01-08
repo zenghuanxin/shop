@@ -71,7 +71,7 @@ class MemberController extends BaseController {
     }
     //ajax局部更新登录状态
     public function ajaxGetLogin(){
-        if(session('id')){
+        if(session('member_id')){
             $arr = array(
                 'ok'=>1,
                 'email'=>session('email'),

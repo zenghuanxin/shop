@@ -105,7 +105,7 @@ function uploadOne($imgName, $dirName, $thumb = array())
 // 显示图片
 function showImage($url, $width='', $height='')
 {
-    $url = '/Public/Uploads/'.$url;
+    $url = C('IMG_URL').$url;
     if($width)
         $width = "width='$width'";
     if($height)

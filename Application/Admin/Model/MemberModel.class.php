@@ -60,7 +60,7 @@ HTML;
         if ($user){
             if (empty($user['email_code'])){
                 if ($user['password'] == md5($password.C('MD5_KEY'))){
-                    session('id',$user['id']);
+                    session('member_id',$user['id']);
                     session('email',$user['email']);
                     return true;
                 }
