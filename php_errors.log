@@ -167,3 +167,5 @@
 [04-Jan-2018 11:43:53 PRC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN), expecting function (T_FUNCTION) in D:\phpStudy\WWW\shop\Application\Admin\Model\CategoryModel.class.php on line 91
 [04-Jan-2018 13:42:24 PRC] PHP Parse error:  syntax error, unexpected 'children' (T_STRING), expecting ']' in D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php on line 150
 [05-Jan-2018 18:12:14 PRC] PHP Fatal error:  Call to undefined method PHPMailer::ErrorInfo() in D:\phpStudy\WWW\shop\Application\Common\Common\function.php on line 36
+[10-Jan-2018 18:11:05 PRC] PHP Parse error:  syntax error, unexpected 'get' (T_STRING) in D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php on line 182
+[10-Jan-2018 18:11:06 PRC] PHP Parse error:  syntax error, unexpected 'get' (T_STRING) in D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php on line 182

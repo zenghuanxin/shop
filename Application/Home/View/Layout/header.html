@@ -60,10 +60,8 @@
 						<div style="clear:both;"></div>
 						<div class="viewlist mt10">
 							<h3>最近浏览的商品：</h3>
-							<ul>
-								<li><a href=""><img src="__PUBLIC__/Home/images/view_list1.jpg" alt="" /></a></li>
-								<li><a href=""><img src="__PUBLIC__/Home/images/view_list2.jpg" alt="" /></a></li>
-								<li><a href=""><img src="__PUBLIC__/Home/images/view_list3.jpg" alt="" /></a></li>
+							<ul id="recentViewGoods">
+
 							</ul>
 						</div>
 					</dd>
@@ -140,3 +138,22 @@
 	<!-- 头部 end-->
 	
 	<div style="clear:both;"></div>
+
+<script>
+	var img_url = "<?php echo C('IMG_URL');?>";
+	$.ajax({
+		type:'get',
+		url:"{:U('Home/Index/ajaxGetRecentViewGoods')}",
+		dataType:'json',
+		success:function (data) {
+			var str ='';
+			//把商品的信息显示在页面上
+			$(data).each(function (k,v) {
+				str +='<li><a href=""><img src="'+img_url+v.sm_logo+'" alt="" /></a></li>';
+            })
+			$('#recentViewGoods').html(str);
+        }
+
+	});
+
+</script>

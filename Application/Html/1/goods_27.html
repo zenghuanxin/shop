@@ -1,24 +1,23 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-	<title><?php echo ($page_title); ?></title>
-	<meta name="keywords" content="<?php echo ($page_keywords); ?>" />
-	<meta name="description" content="<?php echo ($page_description); ?>" />
+	<title>iPhoneX-商品详情页</title>
+	<meta name="keywords" content="100" />
+	<meta name="description" content="100" />
 	<link rel="stylesheet" href="/Public/Home/style/base.css" type="text/css">
 	<link rel="stylesheet" href="/Public/Home/style/global.css" type="text/css">
 	<link rel="stylesheet" href="/Public/Home/style/header.css" type="text/css">
-	<?php foreach ($page_css as $k => $v): ?>
-	<link rel="stylesheet" href="/Public/Home/style/<?php echo ($v); ?>.css" type="text/css">
-	<?php endforeach; ?>
-	<link rel="stylesheet" href="/Public/Home/style/bottomnav.css" type="text/css">
+		<link rel="stylesheet" href="/Public/Home/style/goods.css" type="text/css">
+		<link rel="stylesheet" href="/Public/Home/style/common.css" type="text/css">
+		<link rel="stylesheet" href="/Public/Home/style/jqzoom.css" type="text/css">
+		<link rel="stylesheet" href="/Public/Home/style/bottomnav.css" type="text/css">
 	<link rel="stylesheet" href="/Public/Home/style/footer.css" type="text/css">
 	<script type="text/javascript" src="/Public/Home/js/jquery-1.8.3.min.js"></script>
 	<script type="text/javascript" src="/Public/Home/js/header.js"></script>
-	<?php foreach ($page_js as $k => $v): ?>
-	<script type="text/javascript" src="/Public/Home/js/<?php echo ($v); ?>.js"></script>
-	<?php endforeach; ?>
-</head>
+		<script type="text/javascript" src="/Public/Home/js/goods.js"></script>
+		<script type="text/javascript" src="/Public/Home/js/jqzoom-core.js"></script>
+	</head>
 <body>
 	<!-- 顶部导航 start -->
 	<div class="topnav">
@@ -28,7 +27,7 @@
 			</div>
 			<div class="topnav_right fr">
 				<ul>
-					<li id="logInfo">您好，欢迎来到京西！[<a href='<?php echo U('Home/Member/login'); ?>'>登录</a>] [<a href='<?php echo U('Home/Member/regist'); ?>'>免费注册</a>]</li>
+					<li id="logInfo">您好，欢迎来到京西！[<a href='/index.php/Home/Member/login.html'>登录</a>] [<a href='/index.php/Home/Member/regist.html'>免费注册</a>]</li>
 					<li class="line">|</li>
 					<li>我的订单</li>
 					<li class="line">|</li>
@@ -43,13 +42,11 @@
 
 	<!-- 内容 -->
 	
-<?php
- $catModel = D('Admin/Category'); $catData = $catModel->getCategory(); ?>
 <!-- 头部 start -->
 	<div class="header w1210 bc mt15">
 		<!-- 头部上半部分 start 包括 logo、搜索、用户中心和购物车结算 -->
 		<div class="logo w1210">
-			<h1 class="fl"><a href="<?php echo U(index);?>"><img src="/Public/Home/images/logo.png" alt="京西商城"></a></h1>
+			<h1 class="fl"><a href="/index.php/Home/Index/index.html"><img src="/Public/Home/images/logo.png" alt="京西商城"></a></h1>
 			<!-- 头部搜索 start -->
 			<div class="search fl">
 				<div class="search_form">
@@ -135,25 +132,61 @@
 		<!-- 导航条部分 start -->
 		<div class="nav w1210 bc mt10">
 			<!--  商品分类部分 start-->
-			<div class="category fl <?php if($show_nav!=1) echo 'cat1'; ?>"> <!-- 非首页，需要添加cat1类 -->
-				<div class="cat_hd <?php if($show_nav!=1) echo 'off'; ?>">  <!-- 注意，首页在此div上只需要添加cat_hd类，非首页，默认收缩分类时添加上off类，鼠标滑过时展开菜单则将off类换成on类 -->
+			<div class="category fl cat1"> <!-- 非首页，需要添加cat1类 -->
+				<div class="cat_hd off">  <!-- 注意，首页在此div上只需要添加cat_hd类，非首页，默认收缩分类时添加上off类，鼠标滑过时展开菜单则将off类换成on类 -->
 					<h2>全部商品分类</h2>
 					<em></em>
 				</div>
 				
-				<div class="cat_bd <?php if($show_nav!=1) echo 'none'; ?>">
-					<?php if(is_array($catData)): $i = 0; $__LIST__ = $catData;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="cat <?php if($key == 0): ?>item1<?php endif; ?>">
-						<h3><a href=""><?php echo ($vo["cat_name"]); ?></a> <b></b></h3>
+				<div class="cat_bd none">
+					<div class="cat item1">
+						<h3><a href="">电脑</a> <b></b></h3>
 						<div class="cat_detail">
-							<?php if(is_array($vo['children'])): $i = 0; $__LIST__ = $vo['children'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo1): $mod = ($i % 2 );++$i;?><dl class="<?php if($key == 1): ?>dl_1st<?php endif; ?>">
-									<dt><a href=""><?php echo ($vo1["cat_name"]); ?></a></dt>
-									<?php if(is_array($vo1['children'])): $i = 0; $__LIST__ = $vo1['children'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo2): $mod = ($i % 2 );++$i;?><dd>
-									<a href=""><?php echo ($vo2["cat_name"]); ?></a><?php endforeach; endif; else: echo "" ;endif; ?>
-								</dd>
-							</dl><?php endforeach; endif; else: echo "" ;endif; ?>
-						</div>
-					</div><?php endforeach; endif; else: echo "" ;endif; ?>
-				</div>
+							<dl class="dl_1st">
+									<dt><a href="">联想i7</a></dt>
+									<dd>
+									<a href="">潮5000</a><dd>
+									<a href="">ideapad 320S-15IKB</a><dd>
+									<a href="">拯救者 刃7000</a>								</dd>
+							</dl><dl class="">
+									<dt><a href="">华为</a></dt>
+									<dd>
+									<a href="">MateBook X 13英寸</a><dd>
+									<a href="">MateBook D（2018版）</a><dd>
+									<a href="">12英寸平板二合一笔记本</a>								</dd>
+							</dl><dl class="">
+									<dt><a href="">宏碁</a></dt>
+																	</dd>
+							</dl>						</div>
+					</div><div class="cat ">
+						<h3><a href="">手机</a> <b></b></h3>
+						<div class="cat_detail">
+							<dl class="">
+									<dt><a href="">iphone</a></dt>
+																	</dd>
+							</dl><dl class="">
+									<dt><a href="">华为</a></dt>
+									<dd>
+									<a href="">华为畅享7S</a><dd>
+									<a href="">nova 2s</a><dd>
+									<a href="">Mate 10 保时捷设计</a>								</dd>
+							</dl><dl class="">
+									<dt><a href="">三星</a></dt>
+																	</dd>
+							</dl>						</div>
+					</div><div class="cat ">
+						<h3><a href="">冰箱</a> <b></b></h3>
+						<div class="cat_detail">
+							<dl class="">
+									<dt><a href="">海尔</a></dt>
+																	</dd>
+							</dl><dl class="">
+									<dt><a href="">松下</a></dt>
+									<dd>
+									<a href="">松下1</a><dd>
+									<a href="">松下2</a>								</dd>
+							</dl>						</div>
+					</div>				</div>
 			</div>
 			<!--  商品分类部分 end--> 
 
@@ -177,10 +210,10 @@
 	<div style="clear:both;"></div>
 
 <script>
-	var img_url = "<?php echo C('IMG_URL');?>";
+	var img_url = "/Public/Uploads/";
 	$.ajax({
 		type:'get',
-		url:"<?php echo U('Home/Index/ajaxGetRecentViewGoods');?>",
+		url:"/index.php/Home/Index/ajaxGetRecentViewGoods.html",
 		dataType:'json',
 		success:function (data) {
 			var str ='';
@@ -211,7 +244,7 @@
 <div class="main w1210 mt10 bc">
     <!-- 面包屑导航 start -->
     <div class="breadcrumb">
-        <h2>当前位置：<a href="">首页</a> > <a href="">电脑、办公</a> > <a href="">笔记本</a> > <?php echo ($goodsinfo["goods_name"]); ?></h2>
+        <h2>当前位置：<a href="">首页</a> > <a href="">电脑、办公</a> > <a href="">笔记本</a> > iPhoneX</h2>
     </div>
     <!-- 面包屑导航 end -->
 
@@ -332,14 +365,12 @@
     <div class="goods_content fl mt10 ml10">
         <!-- 商品概要信息 start -->
         <div class="summary">
-            <h3><strong><?php echo ($goodsinfo["goods_name"]); ?></strong></h3>
-            <?php
- $imgUrl = C('IMG_URL'); ?>
-            <!-- 图片预览区域 start -->
+            <h3><strong>iPhoneX</strong></h3>
+                        <!-- 图片预览区域 start -->
             <div class="preview fl">
                 <div class="midpic">
-                    <a href="<?php echo $imgUrl.$goodsinfo['logo'] ?>" class="jqzoom" rel="gal1">   <!-- 第一幅图片的大图 class 和 rel属性不能更改 -->
-                        <?php showImage($goodsinfo['logo'],350) ?>               <!-- 第一幅图片的中图 -->
+                    <a href="/Public/Uploads/Admin/2018-01-03/5a4c4a861a214.png" class="jqzoom" rel="gal1">   <!-- 第一幅图片的大图 class 和 rel属性不能更改 -->
+                        <img src='/Public/Uploads/Admin/2018-01-03/5a4c4a861a214.png' width='350' width='350' />               <!-- 第一幅图片的中图 -->
                     </a>
                 </div>
 
@@ -351,12 +382,9 @@
                     <div class="smallpic_wrap">
                         <ul>
                             <li class="cur">
-                                <a class="zoomThumbActive" href="javascript:void(0);" rel="{gallery: 'gal1', smallimage: '<?php echo $imgUrl.$goodsinfo['logo']; ?>',largeimage: '<?php echo $imgUrl.$goodsinfo['logo']; ?>'}"><?php showImage($goodsinfo['sm_logo']); ?></a>
+                                <a class="zoomThumbActive" href="javascript:void(0);" rel="{gallery: 'gal1', smallimage: '/Public/Uploads/Admin/2018-01-03/5a4c4a861a214.png',largeimage: '/Public/Uploads/Admin/2018-01-03/5a4c4a861a214.png'}"><img src='/Public/Uploads/Admin/2018-01-03/thumb_0_5a4c4a861a214.png'   /></a>
                             </li>
-                            <?php if(is_array($goodsimgs)): $i = 0; $__LIST__ = $goodsimgs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$imgs): $mod = ($i % 2 );++$i;?><li>
-                                    <a href="javascript:void(0);" rel="{gallery: 'gal1', smallimage: '<?php echo $imgUrl.$imgs['pic']; ?>',largeimage: '<?php echo $imgUrl.$imgs['pic']; ?>'}"><?php showImage($imgs['sm_pic']); ?></a>
-                                </li><?php endforeach; endif; else: echo "" ;endif; ?>
-
+                            
                         </ul>
                     </div>
 
@@ -367,25 +395,30 @@
             <!-- 商品基本信息区域 start -->
             <div class="goodsinfo fl ml10">
                 <ul>
-                    <li><span>商品编号： </span><?php echo ($goodsinfo["id"]); ?></li>
-                    <li class="market_price"><span>定价：</span><em>￥<?php echo ($goodsinfo["market_price"]); ?>元</em></li>
-                    <li class="shop_price"><span>本店价：</span> <strong>￥<?php echo ($goodsinfo["shop_price"]); ?>元</strong> <a href="">(降价通知)</a></li>
-                    <li><span>上架时间：</span><?php echo (date('Y-m-d H:i',$goodsinfo["addtime"])); ?></li>
+                    <li><span>商品编号： </span>27</li>
+                    <li class="market_price"><span>定价：</span><em>￥8888.00元</em></li>
+                    <li class="shop_price"><span>本店价：</span> <strong>￥8888.00元</strong> <a href="">(降价通知)</a></li>
+                    <li><span>上架时间：</span>2018-01-03 11:14</li>
                     <li class="star"><span>商品评分：</span> <strong></strong><a href="">(已有21人评价)</a></li> <!-- 此处的星级切换css即可 默认为5星 star4 表示4星 star3 表示3星 star2表示2星 star1表示1星 -->
                     <li class="shop_price"><span>会员价格：</span><strong id="memberPrice"></strong> </li> <!-- 此处的星级切换css即可 默认为5星 star4 表示4星 star3 表示3星 star2表示2星 star1表示1星 -->
                 </ul>
                 <form action="" method="post" class="choose">
                     <ul>
-                        <?php if(is_array($gattr1)): $i = 0; $__LIST__ = $gattr1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="product">
+                        <li class="product">
                             <dl>
-                                <dt><?php echo ($key); ?></dt>
+                                <dt>颜色</dt>
                                 <dd>
-                                    <?php if(is_array($vo)): $i = 0; $__LIST__ = $vo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo1): $mod = ($i % 2 );++$i;?><a class="<?php if($key==0) echo 'selected';?>" href="javascript:;"><?php echo ($vo1['attr_value']); ?> <input type="radio" name="color" value="<?php echo ($vo1['attr_value']); ?>" <?php if($key==0) echo 'checked="checked"';?> /></a><?php endforeach; endif; else: echo "" ;endif; ?>
-                                    <input type="hidden" name="" value="" />
+                                    <a class="selected" href="javascript:;">蓝色 <input type="radio" name="color" value="蓝色" checked="checked" /></a><a class="" href="javascript:;">黑色 <input type="radio" name="color" value="黑色"  /></a><a class="" href="javascript:;">白色 <input type="radio" name="color" value="白色"  /></a>                                    <input type="hidden" name="" value="" />
                                 </dd>
                             </dl>
-                        </li><?php endforeach; endif; else: echo "" ;endif; ?>
-
+                        </li><li class="product">
+                            <dl>
+                                <dt>内存</dt>
+                                <dd>
+                                    <a class="selected" href="javascript:;">4G <input type="radio" name="color" value="4G" checked="checked" /></a><a class="" href="javascript:;">8G <input type="radio" name="color" value="8G"  /></a><a class="" href="javascript:;">16G <input type="radio" name="color" value="16G"  /></a>                                    <input type="hidden" name="" value="" />
+                                </dd>
+                            </dl>
+                        </li>
                         <li>
                             <dl>
                                 <dt>购买数量：</dt>
@@ -429,8 +462,7 @@
                 <div class="introduce detail_div none">
                     <div class="attr mt15">
                         <ul>
-                            <?php if(is_array($gattr2)): $i = 0; $__LIST__ = $gattr2;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$gt2): $mod = ($i % 2 );++$i;?><li><span><?php echo ($gt2["attr_name"]); ?>：</span><?php echo ($gt2["attr_value"]); ?></li><?php endforeach; endif; else: echo "" ;endif; ?>
-                        </ul>
+                            <li><span>尺寸：</span>14寸</li><li><span>CPU：</span>酷睿i7</li>                        </ul>
                     </div>
 
                     <div class="desc mt10">
@@ -747,10 +779,10 @@
 	<!-- 底部导航 end -->
 
 <script>
-    var goods_id = <?php echo $goodsinfo['id'];?>;
+    var goods_id = 27;
     $.ajax({
         type:'get',
-        url:"<?php echo U('Home/Index/ajaxGetPrice','',false);?>/goods_id/"+goods_id,
+        url:"/index.php/Home/Index/ajaxGetPrice/goods_id/"+goods_id,
         success:function (data) {
             $('#memberPrice').html('￥ '+data+' 元');
         }
@@ -791,15 +823,15 @@
 <script>
 	$.ajax({
 		type:'get',
-		url:"<?php echo U('Home/Member/ajaxGetLogin');?>",
+		url:"/index.php/Home/Member/ajaxGetLogin.html",
 		dataType:'json',
 		success:function (data) {
 		    var html = '';
 			if(data.ok==1){
-				html = "您好，"+data.email+"欢迎来到京西！[<a href='<?php echo U('Home/Member/logout'); ?>'>退出</a>]";
+				html = "您好，"+data.email+"欢迎来到京西！[<a href='/index.php/Home/Member/logout.html'>退出</a>]";
 			}
 			else {
-                html= "您好，欢迎来到京西！[<a href='<?php echo U('Home/Member/login'); ?>'>登录</a>] [<a href='<?php echo U('Home/Member/regist'); ?>'>免费注册</a>]";
+                html= "您好，欢迎来到京西！[<a href='/index.php/Home/Member/login.html'>登录</a>] [<a href='/index.php/Home/Member/regist.html'>免费注册</a>]";
 			}
 			$('#logInfo').html(html);
         }

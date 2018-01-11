@@ -1,0 +1,29 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>ECSHOP 管理中心</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="Text/Javascript" language="JavaScript">
+
+if (window.top != window) {
+    window.top.location.href = document.location.href;
+}
+</script>
+
+<frameset rows="76,*" framespacing="0" border="0">
+    <frame src="<?php echo U('top');?>" id="header-frame" name="header-frame" frameborder="no" scrolling="no">
+    <frameset cols="180,*" framespacing="0" border="0" id="frame-body">
+        <frame src="<?php echo U('menu');?>" id="menu-frame" name="menu-frame" frameborder="no">
+        <frame src="<?php echo U('main');?>" id="main-frame" name="main-frame" frameborder="no">
+    </frameset>
+</frameset>
+<!--{/index.php/Admin/Index}<br>-->
+<!--{/index.php/Admin}<br>-->
+<!--{/index.php/Admin/Index}<br>-->
+<!--{/index.php/Admin/Index/index}<br>-->
+<!--{/index.php/Admin/Index/index.html}<br>-->
+<!--<br>-->
+</head>
+<body>
+</body>
+</html>

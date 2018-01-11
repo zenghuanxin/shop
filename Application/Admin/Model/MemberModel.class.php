@@ -60,8 +60,12 @@ HTML;
         if ($user){
             if (empty($user['email_code'])){
                 if ($user['password'] == md5($password.C('MD5_KEY'))){
-                    session('member_id',$user['id']);
+                    session('mid',$user['id']);
                     session('email',$user['email']);
+                    session('jyz',$user['jyz']);
+                    $rate = M('MemberLevel')->field('id,rate')->where(array('bottom_num'=>array('elt',$user['jyz']),'top_num'=>array('egt',$user['jyz'])))->find();
+                    session('level_id',$rate['id']);
+                    session('rate',$rate['rate']/100);
                     return true;
                 }
             }else{

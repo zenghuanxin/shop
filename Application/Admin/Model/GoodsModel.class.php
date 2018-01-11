@@ -404,4 +404,34 @@ class GoodsModel extends Model
         $crazygoods = $this->where($map)->order('sort_num ASC')->select();
         return $crazygoods;
     }
+
+    public function getMemberPrice($goods_id){
+
+        //会员商品价格逻辑
+        //1.如果有促销价，会员商品的价格为促销价
+        //2.如果有会员价格就用会员所在等级的价格计算。
+        //3.如果没有促销价，且没有设置会员价格，则按会员的等级对应的shop_price来计算
+
+        //有促销价直接使用促销价
+        $price = $this->field('shop_price,is_promote,promote_price,promote_start_time,promote_end_time')->find($goods_id);
+        if ($price['is_promote']==1&&$price['promote_start_time']<=time()&&$price['promote_end_time']>=time()){
+            return $price['promote_price'];
+        }
+        //用户没有登录直接使用本店价
+        $memberId = session('mid');
+        if (!$memberId){
+            return $price['shop_price'];
+        }
+
+        //用户登录了需要判断会员等级价格
+        $memModel = M('MemberPrice');
+        $mprice = $memModel->field('price')->where(array('level_id'=>session('level_id'),'goods_id'=>$goods_id))->find();
+
+        if ($mprice){
+            return $mprice['price'];
+        }else{
+            return $price['shop_price'] * session('rate');
+        }
+
+    }
 }
