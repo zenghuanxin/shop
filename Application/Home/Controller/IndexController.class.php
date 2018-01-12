@@ -96,5 +96,17 @@ class IndexController extends BaseController {
 
     }
 
+    public function ajaxGetComment()
+    {
+        $ret = array('login' => 0);
+        $mid = session('mid');
+        if($mid)
+        {
+            $ret['login'] = 1;
+        }
+        echo json_encode($ret);
+    }
+
+
 
 }

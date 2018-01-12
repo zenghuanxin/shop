@@ -430,28 +430,8 @@
                     <!-- 分页信息 end -->
 
                     <!--  评论表单 start-->
-                    <div class="comment_form mt20">
-                        <form action="">
-                            <ul>
-                                <li>
-                                    <label for=""> 评分：</label>
-                                    <input type="radio" name="grade"/> <strong class="star star5"></strong>
-                                    <input type="radio" name="grade"/> <strong class="star star4"></strong>
-                                    <input type="radio" name="grade"/> <strong class="star star3"></strong>
-                                    <input type="radio" name="grade"/> <strong class="star star2"></strong>
-                                    <input type="radio" name="grade"/> <strong class="star star1"></strong>
-                                </li>
+                    <div class="comment_form mt20"><a id="login_a" href="{:U('Home/Member/login')}">登录</a>之后才能评论
 
-                                <li>
-                                    <label for="">评价内容：</label>
-                                    <textarea name="" id="" cols="" rows=""></textarea>
-                                </li>
-                                <li>
-                                    <label for="">&nbsp;</label>
-                                    <input type="submit" value="提交评论"  class="comment_btn"/>
-                                </li>
-                            </ul>
-                        </form>
                     </div>
                     <!--  评论表单 end-->
 
@@ -507,4 +487,59 @@
             $('#memberPrice').html('￥ '+data+' 元');
         }
     });
+
+    // ajax获取商品的评论
+    $.ajax({
+        type :"GET",
+        url : "{:U('ajaxGetComment')}",
+        dataType : "json",
+        success : function(data)
+        {
+            if(data.login == 1)
+            {
+                $(".comment_form").html('<form action="" id="comment_content_form"><ul><li><label for=""> 评分：</label><input type="radio" name="star" value="5"/> <strong class="star star5"></strong><input type="radio" name="star" value="4"/> <strong class="star star4"></strong><input type="radio" name="star" value="3" checked="checked"/> <strong class="star star3"></strong><input type="radio" name="star" value="2"/> <strong class="star star2"></strong><input type="radio" name="star" value="1"/> <strong class="star star1"></strong></li><li><label for="">评价内容：</label><textarea name="content" id="" cols="" rows=""></textarea></li><li><label for="">印象：</label><input type="text" name="impressoin"/></li><li><label for="">&nbsp;</label><input type="hidden" value="{$goodsinfo.id}" name="goods_id"/><input type="button" value="提交评论"  id="comment_sub"/></li></ul></form>');
+
+
+                $('#comment_sub').click(function () {
+                    var formdata = $('#comment_content_form').serialize();//将表单的数据获取
+                    $.ajax({
+                        type:'post',
+                        url:"{:U('Home/Comment/add')}",
+                        data:formdata,
+                        dataType:'json',
+                        success:function (data) {
+                            if(data.ok==1){
+                                // 先拼出评论的字符串
+                                var str = '<div class="comment_items mt10"><div class="user_pic"><dl><dt><a href=""><img src="'+data.face+'" alt="" /></a></dt><dd><a href="">'+data.email+'</a></dd></dl></div><div class="item"><div class="title"><span>'+data.addtime+'</span><strong class="star star'+data.star+'"></strong> <!-- star5表示5星级 start4表示4星级，以此类推 --></div><div class="comment_content">'+data.content+'</div><div class="btns"><a href="" class="reply">回复(0)</a><a href="" class="useful">有用(0)</a></div></div><div class="cornor"></div></div>';
+                                var html = $(str);
+                                // 把评论的内容直接放到页面上
+                                $('.comment_summary').after(html);
+                                //清空表单
+                                document.getElementById("comment_real_form").reset();
+                                // 先滚动到710这个位置然后再显示出评论的内容
+                                $("body").animate({scrollTop:"710px"},300,'linear',function(){html.fadeIn('slow');});
+                            }else
+                                alert(data.error);
+
+                        }
+                    });
+                });
+
+            }
+        }
+    });
+
+    $("#login_a").click(function () {
+         $.ajax({
+             type:'get',
+             url:"{:U('Home/Member/saveAndLogin')}",
+             success:function (data) {
+                 location.href='<?php echo U('Home/Member/login'); ?>';
+             }
+         });
+    });
+
+
+
+
 </script>

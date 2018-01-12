@@ -44,8 +44,14 @@ class MemberController extends BaseController {
             {
                 if($model->login())
                 {
-                    redirect('/');
-                    exit;
+                    if ($reurl = $_SESSION['refererurl'])
+                    {
+                        session('refererurl',null);
+                        redirect($reurl);
+                    }else{
+                        redirect('/');
+                    }
+
                 }
             }
             $this->error($model->getError());
@@ -84,5 +90,9 @@ class MemberController extends BaseController {
         echo  json_encode($arr);
     }
 
+    public function saveAndLogin(){
+
+        session('refererurl',$_SERVER['HTTP_REFERER']);
+    }
 
 }
