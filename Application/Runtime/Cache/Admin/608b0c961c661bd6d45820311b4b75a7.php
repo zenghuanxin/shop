@@ -40,7 +40,7 @@
         </p>
     </div>
     <div id="tabbody-div">
-        <form name="main_form" method="POST" action="/index.php/Admin/Goods/edit/id/34.html" enctype="multipart/form-data">
+        <form name="main_form" method="POST" action="/index.php/Admin/Goods/edit/id/2.html" enctype="multipart/form-data">
             <input type="hidden" name="id" value="<?php echo ($data["id"]); ?>" />
             <input type="hidden" name="old_type_id" value="<?php echo ($data["type_id"]); ?>" />
             <!-- 基本信息 -->

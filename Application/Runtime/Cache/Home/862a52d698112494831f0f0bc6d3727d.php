@@ -374,14 +374,14 @@
                     <li class="star"><span>商品评分：</span> <strong></strong><a href="">(已有21人评价)</a></li> <!-- 此处的星级切换css即可 默认为5星 star4 表示4星 star3 表示3星 star2表示2星 star1表示1星 -->
                     <li class="shop_price"><span>会员价格：</span><strong id="memberPrice"></strong> </li> <!-- 此处的星级切换css即可 默认为5星 star4 表示4星 star3 表示3星 star2表示2星 star1表示1星 -->
                 </ul>
-                <form action="" method="post" class="choose">
+                <form action="<?php echo U('Home/Cart/add');?>" method="post" class="choose">
                     <ul>
                         <?php if(is_array($gattr1)): $i = 0; $__LIST__ = $gattr1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="product">
                             <dl>
                                 <dt><?php echo ($key); ?></dt>
                                 <dd>
-                                    <?php if(is_array($vo)): $i = 0; $__LIST__ = $vo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo1): $mod = ($i % 2 );++$i;?><a class="<?php if($key==0) echo 'selected';?>" href="javascript:;"><?php echo ($vo1['attr_value']); ?> <input type="radio" name="color" value="<?php echo ($vo1['attr_value']); ?>" <?php if($key==0) echo 'checked="checked"';?> /></a><?php endforeach; endif; else: echo "" ;endif; ?>
-                                    <input type="hidden" name="" value="" />
+                                    <?php if(is_array($vo)): $i = 0; $__LIST__ = $vo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo1): $mod = ($i % 2 );++$i;?><a class="<?php if($key==0) echo 'selected';?>" href="javascript:;"><?php echo ($vo1['attr_value']); ?> <input type="radio" name="goods_attr_id[<?php echo ($vo1['attr_id']); ?>]" value="<?php echo ($vo1['id']); ?>" <?php if($key==0) echo 'checked="checked"';?> /></a><?php endforeach; endif; else: echo "" ;endif; ?>
+                                    <input type="hidden" name="goods_id" value="<?php echo ($goodsinfo["id"]); ?>" />
                                 </dd>
                             </dl>
                         </li><?php endforeach; endif; else: echo "" ;endif; ?>
