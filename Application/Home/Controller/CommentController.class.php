@@ -46,4 +46,22 @@ class CommentController extends BaseController {
         }
     }
 
+    public function getComment(){
+        $goods_id = I('get.goods_id');
+        $page = I('get.p');
+        $pagesize = 5;
+        $model = M('Comment');
+        //偏移量
+        $offset = ($page-1)*$pagesize;
+        $data = $model->field('a.*,b.email,b.icon,COUNT(c.id) reply_count')->alias('a')->join('left join shop_member b on a.member_id = b.id left join shop_reply c on c.comment_id = a.id')->where(array('a.goods_id'=>$goods_id))->limit("$offset,$pagesize")->group('a.id')->order('a.id DESC')->select();
+
+        //处理数据
+        foreach ($data as $k=>$v){
+
+            $data[$k]['icon'] = $v['icon'] ? '/Public/Home/'.$v['icon'] : '/Public/Home/images/default_face.jpg';
+            $data[$k]['addtime'] = date('Y-m-d H:i', $v['addtime']);
+        }
+        echo json_encode($data);
+    }
+
 }
