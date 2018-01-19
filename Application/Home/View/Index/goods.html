@@ -193,12 +193,12 @@
                                     <volist name="vo" id="vo1" >
                                     <a class="<?php if($key==0) echo 'selected';?>" href="javascript:;">{$vo1['attr_value']} <input type="radio" name="goods_attr_id[{$vo1['attr_id']}]" value="{$vo1['id']}" <?php if($key==0) echo 'checked="checked"';?> /></a>
                                     </volist>
-                                    <input type="hidden" name="goods_id" value="{$goodsinfo.id}" />
+
                                 </dd>
                             </dl>
                         </li>
                         </volist>
-
+                        <input type="hidden" name="goods_id" value="{$goodsinfo.id}" />
                         <li>
                             <dl>
                                 <dt>购买数量：</dt>

@@ -66,6 +66,10 @@ HTML;
                     $rate = M('MemberLevel')->field('id,rate')->where(array('bottom_num'=>array('elt',$user['jyz']),'top_num'=>array('egt',$user['jyz'])))->find();
                     session('level_id',$rate['id']);
                     session('rate',$rate['rate']/100);
+
+                    //登录之后购物车中的数据转移到数据库中
+                    $cartModel = D('Admin/Cart');
+                    $cartModel->dataToDb();
                     return true;
                 }
             }else{

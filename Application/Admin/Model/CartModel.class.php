@@ -24,14 +24,14 @@ class CartModel extends Model
             }
 
         }else{
-            //先去cookie中的数据
+            //先取出cookie中的数据
             $cart = isset($_COOKIE['cart'])? unserialize($_COOKIE['cart']):array();
             //把商品加入到这个数组中
             $key = $goods_id.'-'.$goods_attr_id;
             if (isset($cart[$key])){
                 $cart[$key] += $goods_number;
             }else{
-                $cart[$key] =$goods_number;
+                $cart[$key] = $goods_number;
             }
 
             $partime = 30*84600;
@@ -48,8 +48,8 @@ class CartModel extends Model
             $cartModel = M('Cart');
             $_cart = $cartModel->where(array('member_id'=>$mid))->select();
         }else{
-            //先去cookie中的数据
-            //转换这个数组的结构和从数据库中取出的数组结构一样，都是二维数组
+            //先取出cookie中的数据
+            //转换这个一维数组的结构和从数据库中取出的数组结构一样，都是二维数组
             $_cart_ = isset($_COOKIE['cart'])? unserialize($_COOKIE['cart']):array();
             $_cart =array();
             foreach ($_cart_ as $k=>$v){
@@ -76,5 +76,67 @@ class CartModel extends Model
         }
         return $_cart;
     }
+
+    public function dataToDb()
+    {
+        $mid = session('mid');
+        if ($mid){
+            //先从cookie取出数据
+            $_cart = isset($_COOKIE['cart'])? unserialize($_COOKIE['cart']):array();
+            if ($_cart){
+                foreach ($_cart as $k=>$v){
+                    $_k = explode('-',$k);
+                    $this->addToCart($_k[0],$_k[1],$v);
+                }
+            }
+        }
+        setcookie('cart','',time()-1,'/','shop.com');
+    }
+
+    public function updateData($gid, $gaid, $gn)
+    {
+        $mid = session('mid');
+        if($mid)
+        {
+            $cartModel = M('Cart');
+            if($gn == 0)
+                $cartModel->where(array(
+                    'goods_id' => array('eq', $gid),
+                    'goods_attr_id' => array('eq', $gaid),
+                    'member_id' => array('eq', $mid),
+                ))->delete();
+            else
+                $cartModel->where(array(
+                    'goods_id' => array('eq', $gid),
+                    'goods_attr_id' => array('eq', $gaid),
+                    'member_id' => array('eq', $mid),
+                ))->setField('goods_number', $gn);
+        }
+        else
+        {
+            // 先从COOKIE中取出购物车的数组
+            $cart = isset($_COOKIE['cart']) ? unserialize($_COOKIE['cart']) : array();
+            $key = $gid . '-' . $gaid;
+            if($gn == 0)
+                unset($cart[$key]);
+            else
+                $cart[$key] = $gn;
+            // 把这个数组存回到cookie
+            $aMonth = 30 * 86400;
+            setcookie('cart', serialize($cart), time() + $aMonth, '/', '34.com');
+        }
+    }
+
+    //清空购物车
+    public function clear(){
+
+        $mid = session('mid');
+        if ($mid){
+            $this->where(array('member_id'=>$mid))->delete();
+        }else{
+            setcookie('cart','',time()-1,'/','shop.com');
+        }
+    }
+
 
 }

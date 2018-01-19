@@ -44,9 +44,9 @@ class MemberController extends BaseController {
             {
                 if($model->login())
                 {
-                    if ($reurl = $_SESSION['refererurl'])
+                    if ($reurl = $_SESSION['returnUrl'])
                     {
-                        session('refererurl',null);
+                        session('returnUrl',null);
                         redirect($reurl);
                     }else{
                         redirect('/');

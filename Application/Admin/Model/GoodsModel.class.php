@@ -434,4 +434,18 @@ class GoodsModel extends Model
         }
 
     }
+    /**
+     * 转化商品属性ID为商品属性字符串
+     *
+     */
+    public function convertGoodsAttrIdToGoodsAttrStr($goods_attr_id){
+
+
+        if ($goods_attr_id){
+            $sql = 'SELECT GROUP_CONCAT(CONCAT( b.attr_name,  ":", a.attr_value ) separator  "<br />" ) gastr FROM shop_goods_attr a LEFT JOIN shop_attribute b ON a.attr_id = b.id WHERE a.id in ('.$goods_attr_id.')';
+            $res = $this->query($sql);
+            return $res[0]['gastr'];
+        }
+        return '';
+    }
 }
