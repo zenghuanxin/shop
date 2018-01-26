@@ -14,13 +14,15 @@
 <!-- 页面头部 end -->
 
 <div style="clear:both;"></div>
-
+<form method="post" action="{:U('Home/Cart/order')}" name="cart">
 <!-- 主体部分 start -->
 <div class="mycart w990 mt10 bc">
     <h2><span>我的购物车</span></h2>
     <table>
         <thead>
         <tr>
+            <th class="col6">是否购买</th>
+            <th class="col1">商品图片</th>
             <th class="col1">商品名称</th>
             <th class="col2">商品信息</th>
             <th class="col3">单价</th>
@@ -36,7 +38,9 @@
         ?>
         <volist name="data" id="vo">
             <tr goods_id="{$vo.goods_id}" goods_attr_id="{$vo.goods_attr_id}">
-                <td class="col1"><a href=""><?php echo showImage($vo['sm_logo'])?></a>  <strong><a href="">{$vo.goods_name}</a></strong></td>
+                <td><input type="checkbox" name="buythis[]" value="{$vo.goods_id}-{$vo.goods_attr_id}"></td>
+                <td class="col1"><a href=""><?php echo showImage($vo['sm_logo'])?></a></td>
+                <td class="col1"><strong><a href="">{$vo.goods_name}</a></strong></td>
                 <td class="col2"> {$vo.goods_attr_str} </td>
                 <td class="col3">￥<span>{$vo.price}</span>元</td>
                 <td class="col4">
@@ -57,9 +61,10 @@
     </table>
     <div class="cart_btn w990 bc mt10">
         <a href="{:U('Home/Index/index')}" class="continue">继续购物</a>
-        <a href="{:U('Home/Cart/order')}" onclick="click" class="checkout">结 算</a>
+        <a href="javascript:void(0)" onclick="$('form[name=cart]').submit()" class="checkout">结 算</a>
     </div>
 </div>
+</form>
 <!-- 主体部分 end -->
 <script>
     function ajaxUpdateCartData(goodsId, goodsAttrId, goodsNumber)

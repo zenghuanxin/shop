@@ -47,6 +47,7 @@ class CartModel extends Model
             //先查看数据库中是否有数据
             $cartModel = M('Cart');
             $_cart = $cartModel->where(array('member_id'=>$mid))->select();
+
         }else{
             //先取出cookie中的数据
             //转换这个一维数组的结构和从数据库中取出的数组结构一样，都是二维数组
@@ -132,7 +133,13 @@ class CartModel extends Model
 
         $mid = session('mid');
         if ($mid){
-            $this->where(array('member_id'=>$mid))->delete();
+            //取出勾选的商品
+            $buythis = session('buythis');
+            foreach ($buythis as $k=>$v){
+                //从字符串解析出商品ID和属性ID
+                $_v = explode('-',$v);
+                $this->where(array('member_id'=>$mid,'goods_id'=>$_v['0'],'goods_attr_id'=>$_v[1]))->delete();
+            }
         }else{
             setcookie('cart','',time()-1,'/','shop.com');
         }

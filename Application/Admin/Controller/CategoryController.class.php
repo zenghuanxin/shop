@@ -22,6 +22,10 @@ class CategoryController extends IndexController
 		$parentData = $parentModel->getTree();
 		$this->assign('parentData', $parentData);
 
+        //取出所有的商品类型制作下拉框
+        $typeModel = M('Type');
+        $typeData = $typeModel->select();
+        $this->assign('typeData',$typeData);
 		$this->setPageBtn('添加商品分类', '商品分类列表', U('lst?p='.I('get.p')));
 		$this->display();
     }
@@ -51,6 +55,19 @@ class CategoryController extends IndexController
 			'parentData' => $parentData,
 			'children' => $children,
 		));
+
+        //取出所有的商品类型制作下拉框
+        $typeModel = M('Type');
+        $typeData = $typeModel->select();
+        $this->assign('typeData',$typeData);
+
+        //当前这个分类已经设置的属性信息
+        if ($data['search_attr_id']){
+            //把属性ID转化成属性的名字
+            $attrModel = M('Attribute');
+            $searchAttrData = $attrModel->field('id,attr_name,type_id')->where(array('id'=>array('in',$data['search_attr_id'])))->select();
+        }
+        $this->assign('searchAttrData',$searchAttrData);
 
 		$this->setPageBtn('修改商品分类', '商品分类列表', U('lst?p='.I('get.p')));
 		$this->display();

@@ -101,14 +101,14 @@
 				<div class="cat_bd <?php if($show_nav!=1) echo 'none'; ?>">
 					<volist name="catData" id="vo">
 					<div class="cat <if condition='$key eq 0'>item1</if>">
-						<h3><a href="">{$vo.cat_name}</a> <b></b></h3>
+						<h3><a href="{:U('Home/Search/search',array('cid'=>$vo['id']))}">{$vo.cat_name}</a> <b></b></h3>
 						<div class="cat_detail">
 							<volist name="vo['children']" id="vo1">
 								<dl class="<if condition='$key eq 1'>dl_1st</if>">
-									<dt><a href="">{$vo1.cat_name}</a></dt>
+									<dt><a href="{:U('Home/Search/search',array('cid'=>$vo1['id']))}">{$vo1.cat_name}</a></dt>
 									<volist name="vo1['children']" id="vo2">
 									<dd>
-									<a href="">{$vo2.cat_name}</a>
+									<a href="{:U('Home/Search/search',array('cid'=>$vo2['id']))}">{$vo2.cat_name}</a>
 									</volist>
 								</dd>
 							</dl>

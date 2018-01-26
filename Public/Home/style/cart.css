@@ -12,12 +12,12 @@
 .mycart th{text-align: center; font-weight: bold;}
 .mycart tbody td{border-bottom: 1px solid #E7E3E7;}
 .mycart td{text-align: center;}
-.mycart .col1{width: 40%;}
-.mycart .col2{width: 20%;}
+.mycart .col1{width: 15%; align-content: center}
+.mycart .col2{width: 15%;}
 .mycart .col3{width: 10%;}
 .mycart .col4{width: 10%;}
 .mycart .col5{width: 10%;}
-.mycart .col6{width: 10%;}
+.mycart .col6{width: 5%;}
 .mycart tbody img{width: 80px; height: 80px;border: 1px solid #eee; vertical-align: middle; float: left; display: inline; margin-right: 10px;}
 .mycart td.col1{text-align: left; padding: 10px 0 10px 10px;}
 .mycart td.col1 strong{display: inline-block; float: left; width: 280px; margin-top: 25px; }

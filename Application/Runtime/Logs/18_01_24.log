@@ -1,0 +1,780 @@
+[ 2018-01-24T10:57:43+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Admin\Model\GoodsModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\phpStudy\WWW\shop\Application\Admin\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.021001s ]
+SQL: SELECT * FROM `shop_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_promote` = 1 ) AND ( `promote_start_time` <= 1516762663 ) AND ( `promote_end_time` >= 1516762663 ) ORDER BY sort_num ASC  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shop_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_hot` = 1 ) ORDER BY sort_num ASC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shop_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_best` = 1 ) ORDER BY sort_num ASC  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shop_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_new` = 1 ) ORDER BY sort_num ASC  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shop_category` [ RunTime:0.003001s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 52 行.
+NOTIC: [8] Undefined index: children D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 749 行.
+NOTIC: [8] Use of undefined constant member - assumed 'member' D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 749 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 749 行.
+NOTIC: [8] Use of undefined constant ajaxGetLogin - assumed 'ajaxGetLogin' D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 749 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 749 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-24T10:57:43+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetRecentViewGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.004001s ]
+SQL: SELECT `id`,`goods_name`,`sm_logo` FROM `shop_goods` WHERE ( `id` IN ('31','34','27','35') ) ORDER BY INSTR('.31,34,27,35,',CONCAT(',',id,','))  [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-24T10:57:43+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxGetLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-24T10:57:43+08:00 ] 127.0.0.1 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\GoodsModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\phpStudy\WWW\shop\Application\Admin\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `shop_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_promote` = 1 ) AND ( `promote_start_time` <= 1516762663 ) AND ( `promote_end_time` >= 1516762663 ) ORDER BY sort_num ASC  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shop_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_hot` = 1 ) ORDER BY sort_num ASC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shop_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_best` = 1 ) ORDER BY sort_num ASC  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shop_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_new` = 1 ) ORDER BY sort_num ASC  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shop_category` [ RunTime:0.005001s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 52 行.
+NOTIC: [8] Undefined index: children D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 749 行.
+NOTIC: [8] Use of undefined constant member - assumed 'member' D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 749 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 749 行.
+NOTIC: [8] Use of undefined constant ajaxGetLogin - assumed 'ajaxGetLogin' D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 749 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 749 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-24T10:57:45+08:00 ] 127.0.0.1 /index.php/Home/Index/goods/goods_id/34
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.003000s ]
+SQL: SELECT a.*,b.brand_name FROM shop_goods a left join shop_brand b on b.id=a.brand_id  WHERE ( a.id = '34' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_attribute` [ RunTime:0.004000s ]
+SQL: SELECT b.*,a.attr_name,a.attr_option_values FROM shop_attribute a left join shop_goods_attr b on a.id = b.attr_id  WHERE ( b.goods_id = '34' ) AND ( a.attr_type = 1 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_goods_pics` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `shop_goods_pics` WHERE ( `goods_id` = 34 )  [ RunTime:0.000000s ]
+SQL: SELECT b.*,a.attr_name,a.attr_option_values FROM shop_attribute a left join shop_goods_attr b on a.id = b.attr_id  WHERE ( b.goods_id = '34' ) AND ( a.attr_type = 0 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shop_category` [ RunTime:0.004000s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 52 行.
+NOTIC: [8] Undefined index: children D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\862a52d698112494831f0f0bc6d3727d.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-24T10:57:46+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetRecentViewGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.004001s ]
+SQL: SELECT `id`,`goods_name`,`sm_logo` FROM `shop_goods` WHERE ( `id` IN ('31','34','27','35') ) ORDER BY INSTR('.31,34,27,35,',CONCAT(',',id,','))  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-24T10:57:46+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetComment.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-24T10:57:46+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetPrice/goods_id/34
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\GoodsModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\phpStudy\WWW\shop\Application\Admin\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.004000s ]
+SQL: SELECT `shop_price`,`is_promote`,`promote_price`,`promote_start_time`,`promote_end_time` FROM `shop_goods` WHERE ( `id` = 34 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shop_member_price` [ RunTime:0.004001s ]
+SQL: SELECT `price` FROM `shop_member_price` WHERE ( `level_id` = 2 ) AND ( `goods_id` = 34 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-24T10:57:46+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxGetLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-24T10:57:50+08:00 ] 127.0.0.1 /index.php/Home/Cart/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_cart` [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `shop_cart` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `shop_cart` WHERE ( `goods_id` = 34 ) AND ( `goods_attr_id` = '112,114' ) AND ( `member_id` = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: INSERT INTO `shop_cart` (`goods_id`,`goods_attr_id`,`member_id`,`goods_number`) VALUES (34,'112,114',4,1) [ RunTime:0.001000s ]
+
+[ 2018-01-24T10:57:50+08:00 ] 127.0.0.1 /index.php/Home/Cart/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `shop_cart` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `shop_cart` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `shop_cart` WHERE ( `member_id` = 4 )  [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\GoodsModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\phpStudy\WWW\shop\Application\Admin\Model\GoodsModel.class.php 第 451 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.003000s ]
+SQL: SELECT `sm_logo`,`goods_name` FROM `shop_goods` WHERE ( `id` = 34 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `shop_price`,`is_promote`,`promote_price`,`promote_start_time`,`promote_end_time` FROM `shop_goods` WHERE ( `id` = 34 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_member_price` [ RunTime:0.003000s ]
+SQL: SELECT `price` FROM `shop_member_price` WHERE ( `level_id` = 2 ) AND ( `goods_id` = 34 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT GROUP_CONCAT(CONCAT( b.attr_name,  ":", a.attr_value ) separator  "<br />" ) gastr FROM shop_goods_attr a LEFT JOIN shop_attribute b ON a.attr_id = b.id WHERE a.id in (112,114) [ RunTime:0.000000s ]
+SQL: SELECT `sm_logo`,`goods_name` FROM `shop_goods` WHERE ( `id` = 31 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `shop_price`,`is_promote`,`promote_price`,`promote_start_time`,`promote_end_time` FROM `shop_goods` WHERE ( `id` = 31 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `price` FROM `shop_member_price` WHERE ( `level_id` = 2 ) AND ( `goods_id` = 31 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-24T10:57:50+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxGetLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-24T10:57:55+08:00 ] 127.0.0.1 /index.php/Home/Cart/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-24T10:57:58+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxGetLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-24T10:58:00+08:00 ] 127.0.0.1 /index.php/Home/Cart/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_cart` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `shop_cart` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `shop_cart` WHERE ( `member_id` = 4 )  [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\GoodsModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\phpStudy\WWW\shop\Application\Admin\Model\GoodsModel.class.php 第 451 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.003000s ]
+SQL: SELECT `sm_logo`,`goods_name` FROM `shop_goods` WHERE ( `id` = 34 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `shop_price`,`is_promote`,`promote_price`,`promote_start_time`,`promote_end_time` FROM `shop_goods` WHERE ( `id` = 34 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shop_member_price` [ RunTime:0.005000s ]
+SQL: SELECT `price` FROM `shop_member_price` WHERE ( `level_id` = 2 ) AND ( `goods_id` = 34 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT GROUP_CONCAT(CONCAT( b.attr_name,  ":", a.attr_value ) separator  "<br />" ) gastr FROM shop_goods_attr a LEFT JOIN shop_attribute b ON a.attr_id = b.id WHERE a.id in (112,114) [ RunTime:0.001000s ]
+SQL: SELECT `sm_logo`,`goods_name` FROM `shop_goods` WHERE ( `id` = 31 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `shop_price`,`is_promote`,`promote_price`,`promote_start_time`,`promote_end_time` FROM `shop_goods` WHERE ( `id` = 31 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `price` FROM `shop_member_price` WHERE ( `level_id` = 2 ) AND ( `goods_id` = 31 ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-24T10:58:00+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxGetLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-24T10:58:16+08:00 ] 127.0.0.1 /index.php/Home/Cart/order.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `shop_cart` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `shop_cart` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `shop_cart` WHERE ( `member_id` = 4 )  [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\GoodsModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\phpStudy\WWW\shop\Application\Admin\Model\GoodsModel.class.php 第 451 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.004000s ]
+SQL: SELECT `sm_logo`,`goods_name` FROM `shop_goods` WHERE ( `id` = 34 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `shop_price`,`is_promote`,`promote_price`,`promote_start_time`,`promote_end_time` FROM `shop_goods` WHERE ( `id` = 34 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shop_member_price` [ RunTime:0.003000s ]
+SQL: SELECT `price` FROM `shop_member_price` WHERE ( `level_id` = 2 ) AND ( `goods_id` = 34 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT GROUP_CONCAT(CONCAT( b.attr_name,  ":", a.attr_value ) separator  "<br />" ) gastr FROM shop_goods_attr a LEFT JOIN shop_attribute b ON a.attr_id = b.id WHERE a.id in (112,114) [ RunTime:0.000000s ]
+SQL: SELECT `sm_logo`,`goods_name` FROM `shop_goods` WHERE ( `id` = 31 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `shop_price`,`is_promote`,`promote_price`,`promote_start_time`,`promote_end_time` FROM `shop_goods` WHERE ( `id` = 31 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `price` FROM `shop_member_price` WHERE ( `level_id` = 2 ) AND ( `goods_id` = 31 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: D方法实例化没找到模型类Admin\Model\GoodsNumberModel
+SQL: SHOW COLUMNS FROM `shop_goods_number` [ RunTime:0.004000s ]
+SQL: SELECT `goods_number` FROM `shop_goods_number` WHERE ( `goods_id` = 34 ) AND ( `goods_attr_id` = '112,114' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: INSERT INTO `shop_order` (`shr_name`,`shr_province`,`shr_city`,`shr_area`,`shr_address`,`shr_tel`,`post_method`,`pay_method`,`member_id`,`addtime`,`total_price`) VALUES ('zhx','天津','西城区','三环以内','sadsa','18659328891','顺丰','支付宝','4',1516762696,8443.6) [ RunTime:0.007001s ]
+SQL: SELECT * FROM `shop_cart` WHERE ( `member_id` = 4 )  [ RunTime:0.000000s ]
+SQL: SELECT `sm_logo`,`goods_name` FROM `shop_goods` WHERE ( `id` = 34 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `shop_price`,`is_promote`,`promote_price`,`promote_start_time`,`promote_end_time` FROM `shop_goods` WHERE ( `id` = 34 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `price` FROM `shop_member_price` WHERE ( `level_id` = 2 ) AND ( `goods_id` = 34 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT GROUP_CONCAT(CONCAT( b.attr_name,  ":", a.attr_value ) separator  "<br />" ) gastr FROM shop_goods_attr a LEFT JOIN shop_attribute b ON a.attr_id = b.id WHERE a.id in (112,114) [ RunTime:0.000000s ]
+SQL: SELECT `sm_logo`,`goods_name` FROM `shop_goods` WHERE ( `id` = 31 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `shop_price`,`is_promote`,`promote_price`,`promote_start_time`,`promote_end_time` FROM `shop_goods` WHERE ( `id` = 31 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `price` FROM `shop_member_price` WHERE ( `level_id` = 2 ) AND ( `goods_id` = 31 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shop_order_goods` [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `shop_goods_number` [ RunTime:0.003000s ]
+SQL: UPDATE `shop_goods_number` SET `goods_number`=goods_number-1 WHERE ( `goods_id` = 34 ) AND ( `goods_attr_id` = '112,114' ) [ RunTime:0.000000s ]
+SQL: INSERT INTO `shop_order_goods` (`order_id`,`member_id`,`goods_id`,`goods_attr_id`,`goods_attr_str`,`goods_price`,`goods_number`) VALUES (7,4,34,'112,114','颜色:黑色<br />内存:64G',8443.6,1) [ RunTime:0.001000s ]
+SQL: DELETE FROM `shop_cart` WHERE ( `member_id` = 4 ) AND ( `goods_id` = 34 ) AND ( `goods_attr_id` = '112,114' ) [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-24T10:58:17+08:00 ] 127.0.0.1 /index.php/Home/Cart/order_ok/order_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: btn D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\883e6cfc0f338459c01a1a501e4c938f.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-24T10:58:17+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxGetLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-24T11:19:12+08:00 ] 127.0.0.1 /index.php/Home/Cart/order_ok/order_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Controller\CartController::success() should be compatible with Think\Controller::success($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy\WWW\shop\Application\Home\Controller\CartController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.011001s ]
+SQL: SELECT `total_price` FROM `shop_order` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.016001s ]
+NOTIC: [8] Undefined variable: show_url D:\phpStudy\WWW\shop\Application\Home\Controller\CartController.class.php 第 159 行.
+
+[ 2018-01-24T11:20:32+08:00 ] 127.0.0.1 /index.php/Home/Cart/order_ok/order_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Controller\CartController::success() should be compatible with Think\Controller::success($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy\WWW\shop\Application\Home\Controller\CartController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.003000s ]
+SQL: SELECT `total_price` FROM `shop_order` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: show_url D:\phpStudy\WWW\shop\Application\Home\Controller\CartController.class.php 第 159 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: btn D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\883e6cfc0f338459c01a1a501e4c938f.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-24T11:20:32+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxGetLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-24T11:20:43+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxGetLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-24T11:21:30+08:00 ] 127.0.0.1 /index.php/Home/Cart/order_ok/order_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Controller\CartController::success() should be compatible with Think\Controller::success($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy\WWW\shop\Application\Home\Controller\CartController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.003000s ]
+SQL: SELECT `total_price` FROM `shop_order` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: show_url D:\phpStudy\WWW\shop\Application\Home\Controller\CartController.class.php 第 159 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: btn D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\883e6cfc0f338459c01a1a501e4c938f.php 第 70 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-24T11:21:30+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxGetLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-24T11:21:40+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxGetLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-24T11:27:23+08:00 ] 127.0.0.1 /index.php/Home/Cart/order_ok/order_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Controller\CartController::success() should be compatible with Think\Controller::success($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy\WWW\shop\Application\Home\Controller\CartController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.004000s ]
+SQL: SELECT `total_price` FROM `shop_order` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: show_url D:\phpStudy\WWW\shop\Application\Home\Controller\CartController.class.php 第 159 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-01-24T11:27:23+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxGetLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-24T11:27:24+08:00 ] 127.0.0.1 /index.php/Home/Cart/order_ok/order_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Controller\CartController::success() should be compatible with Think\Controller::success($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy\WWW\shop\Application\Home\Controller\CartController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.004001s ]
+SQL: SELECT `total_price` FROM `shop_order` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: show_url D:\phpStudy\WWW\shop\Application\Home\Controller\CartController.class.php 第 159 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-24T11:27:24+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxGetLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-24T11:27:34+08:00 ] 127.0.0.1 /index.php/Home/Cart/order_ok/order_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Controller\CartController::success() should be compatible with Think\Controller::success($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy\WWW\shop\Application\Home\Controller\CartController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.004001s ]
+SQL: SELECT `total_price` FROM `shop_order` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: show_url D:\phpStudy\WWW\shop\Application\Home\Controller\CartController.class.php 第 159 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-24T11:27:34+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxGetLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-24T11:27:50+08:00 ] 127.0.0.1 /index.php/Home/Cart/order_ok/order_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Controller\CartController::success() should be compatible with Think\Controller::success($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy\WWW\shop\Application\Home\Controller\CartController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.004000s ]
+SQL: SELECT `total_price` FROM `shop_order` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: show_url D:\phpStudy\WWW\shop\Application\Home\Controller\CartController.class.php 第 159 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-24T11:27:50+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxGetLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-24T11:28:09+08:00 ] 127.0.0.1 /index.php/Home/Cart/order_ok/order_id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Controller\CartController::success() should be compatible with Think\Controller::success($message = '', $jumpUrl = '', $ajax = false) D:\phpStudy\WWW\shop\Application\Home\Controller\CartController.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `shop_order` [ RunTime:0.003000s ]
+SQL: SELECT `total_price` FROM `shop_order` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: show_url D:\phpStudy\WWW\shop\Application\Home\Controller\CartController.class.php 第 159 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-24T11:28:09+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxGetLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-24T11:28:11+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxGetLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-24T17:29:44+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.048003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.026002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026002s ]
+NOTIC: [2048] Declaration of Admin\Model\GoodsModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\phpStudy\WWW\shop\Application\Admin\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.054003s ]
+SQL: SELECT * FROM `shop_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_promote` = 1 ) AND ( `promote_start_time` <= 1516786184 ) AND ( `promote_end_time` >= 1516786184 ) ORDER BY sort_num ASC  [ RunTime:0.013001s ]
+SQL: SELECT * FROM `shop_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_hot` = 1 ) ORDER BY sort_num ASC  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shop_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_best` = 1 ) ORDER BY sort_num ASC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shop_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_new` = 1 ) ORDER BY sort_num ASC  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shop_category` [ RunTime:0.021001s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 52 行.
+NOTIC: [8] Undefined index: children D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 749 行.
+NOTIC: [8] Use of undefined constant member - assumed 'member' D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 749 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 749 行.
+NOTIC: [8] Use of undefined constant ajaxGetLogin - assumed 'ajaxGetLogin' D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 749 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 749 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.136008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.136008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009001s ]
+
+[ 2018-01-24T17:29:44+08:00 ] 127.0.0.1 /index.php/Home/Index/ajaxGetRecentViewGoods.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.013001s ]
+SQL: SELECT `id`,`goods_name`,`sm_logo` FROM `shop_goods` WHERE ( `id` IN ('34','31','27') ) ORDER BY INSTR('.34,31,27,',CONCAT(',',id,','))  [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-24T17:29:44+08:00 ] 127.0.0.1 /index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Admin\Model\GoodsModel::_after_insert() should be compatible with Think\Model::_after_insert($data, $options) D:\phpStudy\WWW\shop\Application\Admin\Model\GoodsModel.class.php 第 5 行.
+SQL: SHOW COLUMNS FROM `shop_goods` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `shop_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_promote` = 1 ) AND ( `promote_start_time` <= 1516786184 ) AND ( `promote_end_time` >= 1516786184 ) ORDER BY sort_num ASC  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shop_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_hot` = 1 ) ORDER BY sort_num ASC  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `shop_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_best` = 1 ) ORDER BY sort_num ASC  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `shop_goods` WHERE ( `is_on_sale` = 1 ) AND ( `is_delete` = 0 ) AND ( `is_new` = 1 ) ORDER BY sort_num ASC  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `shop_category` [ RunTime:0.021002s ]
+NOTIC: [8] Use of undefined constant index - assumed 'index' D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 52 行.
+NOTIC: [8] Undefined index: children D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [8] Undefined index: children D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 150 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 749 行.
+NOTIC: [8] Use of undefined constant member - assumed 'member' D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 749 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 749 行.
+NOTIC: [8] Use of undefined constant ajaxGetLogin - assumed 'ajaxGetLogin' D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 749 行.
+NOTIC: [2] Division by zero D:\phpStudy\WWW\shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 749 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-24T17:29:44+08:00 ] 127.0.0.1 /index.php/Home/Member/ajaxGetLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

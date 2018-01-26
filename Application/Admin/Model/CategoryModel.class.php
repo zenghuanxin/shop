@@ -97,4 +97,29 @@ class CategoryModel extends Model
             return $data;
         }
     }
+    public function _before_insert(&$data, $options)
+    {
+        $attr_id = I('post.attr_id');
+        //循环过滤提交的属性值
+        foreach ($attr_id as $k =>$v){
+            if (empty($v)){
+                unset($attr_id[$k]);
+            }
+        }
+        if ($attr_id){
+            $data['search_attr_id'] = implode(',',$attr_id);
+        }
+    }
+    public function _before_update(&$data, $options)
+    {
+        $attr_id = I('post.attr_id');
+        //循环过滤提交的属性值
+        foreach ($attr_id as $k =>$v){
+            if (empty($v)){
+                unset($attr_id[$k]);
+            }
+        }
+        $data['search_attr_id'] = implode(',',$attr_id);
+
+    }
 }
